@@ -1,0 +1,1841 @@
+WARNING 2018-10-24 00:07:17,601 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 405 3883
+INFO 2018-10-24 00:07:17,691 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2018-10-24 00:07:17,696 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+INFO 2018-10-24 00:07:17,705 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2018-10-24 00:07:17,712 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2018-10-24 00:07:17,723 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2018-10-24 00:07:17,782 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO 2018-10-24 00:07:17,783 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2018-10-24 00:07:17,792 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+INFO 2018-10-24 00:07:17,793 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2018-10-24 00:07:17,826 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+INFO 2018-10-24 00:07:18,157 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2018-10-24 00:07:18,411 base 152 Not Found: /favicon.ico
+WARNING 2018-10-24 00:07:18,412 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2342
+ERROR 2018-10-24 00:08:09,103 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f5ea4fad0b8>] Command # 1 (SETEX sms_code15555555555 300 184729) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:08:09,143 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:08:12,085 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f5ea44627b8>] Command # 1 (SETEX sms_code15555555555 300 895724) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:08:12,126 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:08:50,266 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f5ea4f89b70>] Command # 1 (SETEX sms_code17607162138 300 182218) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:08:50,307 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:08:53,076 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f5ea4412f60>] Command # 1 (SETEX sms_code17607162138 300 166123) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:08:53,142 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:08:54,920 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f5ea43eaf60>] Command # 1 (SETEX sms_code17607162138 300 658551) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:08:54,959 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:12:02,782 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f2c830a7940>] Command # 1 (SETEX sms_code17607162138 300 439542) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:12:02,820 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:15:15,810 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f2c800e84e0>] Command # 1 (SETEX sms_code17607162138 300 371367) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:15:15,838 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:15:17,063 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f2c80099d68>] Command # 1 (SETEX sms_code17607162138 300 153895) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:15:17,136 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:15:26,346 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f2c800f44a8>] Command # 1 (SETEX sms_code17607162138 300 602199) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:15:26,379 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+ERROR 2018-10-24 00:15:27,427 exceptions 25 [<verifications.views.SMSCodeView object at 0x7f2c800d62e8>] Command # 1 (SETEX sms_code17607162138 300 232426) of pipeline caused error: MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2018-10-24 00:15:27,446 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 507 5207
+INFO 2018-10-24 09:19:39,065 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 5170
+INFO 2018-10-24 09:23:30,503 basehttp 124 "GET /sms_code/15675456179 HTTP/1.1" 301 0
+INFO 2018-10-24 09:23:30,623 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 5170
+ERROR 2018-10-24 09:37:59,272 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+ERROR 2018-10-24 09:37:59,310 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-10-24 09:37:59,445 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 400 68354
+WARNING 2018-10-24 09:37:59,454 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 400 68409
+ERROR 2018-10-24 09:37:59,459 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-10-24 09:37:59,517 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 400 68409
+ERROR 2018-10-24 09:38:04,265 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+ERROR 2018-10-24 09:38:04,283 exception 80 Invalid HTTP_HOST header: 'api.meiduo.site:8000'. You may need to add 'api.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-10-24 09:38:04,425 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 400 68409
+WARNING 2018-10-24 09:38:04,447 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 400 68354
+WARNING 2018-10-24 09:39:35,627 base 152 Not Found: /mobiles/15675456179/count/
+WARNING 2018-10-24 09:39:35,631 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 404 2205
+INFO 2018-10-24 09:39:35,714 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+WARNING 2018-10-24 10:11:31,112 base 152 Not Found: /mobiles/15675456179/count/
+WARNING 2018-10-24 10:11:31,113 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 404 2205
+WARNING 2018-10-24 10:11:31,133 base 152 Not Found: /mobiles/15675456179/count/
+WARNING 2018-10-24 10:11:31,134 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 404 2205
+INFO 2018-10-24 10:11:31,190 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 10:51:20,090 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:51:26,616 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:51:26,690 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 10:51:43,871 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:51:43,882 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:52:06,975 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:52:06,990 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:52:32,612 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-25 10:52:32,636 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:52:32,645 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 10:52:32,649 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+ERROR 2018-10-25 10:52:32,703 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+INFO 2018-10-25 10:52:42,409 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:52:42,418 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 10:52:42,424 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+ERROR 2018-10-25 10:52:42,477 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+INFO 2018-10-25 10:54:06,638 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:54:06,665 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+ERROR 2018-10-25 10:54:20,971 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+INFO 2018-10-25 10:54:20,987 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:54:20,989 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+ERROR 2018-10-25 10:54:21,007 basehttp 124 "POST /users/ HTTP/1.1" 500 17884
+INFO 2018-10-25 10:54:22,431 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:54:22,433 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 10:54:22,437 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+ERROR 2018-10-25 10:54:22,464 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+ERROR 2018-10-25 10:54:22,610 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+INFO 2018-10-25 10:54:22,651 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:54:22,659 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+ERROR 2018-10-25 10:54:22,673 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+INFO 2018-10-25 10:55:48,621 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:55:48,641 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 10:56:06,598 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:56:06,625 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 10:56:06,627 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 40, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+ERROR 2018-10-25 10:56:06,684 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+INFO 2018-10-25 10:57:38,961 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:57:39,049 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 10:57:56,557 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 10:57:56,563 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 10:57:56,568 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 41, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+ERROR 2018-10-25 10:57:56,654 basehttp 124 "POST /users/ HTTP/1.1" 500 17885
+INFO 2018-10-25 10:58:56,060 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:58:56,076 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+ERROR 2018-10-25 10:59:11,508 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 42, in validate
+    sms_code_redis=redis_cli.get('sms_code'+mobile)
+TypeError: must be str, not NoneType
+INFO 2018-10-25 10:59:11,537 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 10:59:11,542 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+ERROR 2018-10-25 10:59:11,751 basehttp 124 "POST /users/ HTTP/1.1" 500 17884
+INFO 2018-10-25 11:01:30,916 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:01:31,016 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:01:43,439 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:01:43,445 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:01:43,472 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:02:46,442 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:02:46,454 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:02:57,309 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:02:57,326 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-25 11:02:57,368 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:02:57,373 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:03:53,025 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:03:53,087 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:04:05,574 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:04:05,600 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:04:05,634 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:10:43,075 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:10:43,078 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:11:01,732 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:11:01,742 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:11:01,745 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:11:33,483 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:11:33,489 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:11:33,504 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:13:38,688 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:13:38,789 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:13:50,300 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-25 11:13:50,381 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:13:50,385 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 11:13:50,393 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 48, in validate
+    sms_code_redis.delete()
+AttributeError: 'bytes' object has no attribute 'delete'
+ERROR 2018-10-25 11:13:50,536 basehttp 124 "POST /users/ HTTP/1.1" 500 17901
+INFO 2018-10-25 11:14:54,608 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:14:54,622 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:15:21,023 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:15:21,044 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 11:15:21,054 exceptions 25 [<users.views.UserCreateView object at 0x7f72fd8ecc88>] wrong number of arguments for 'del' command
+ERROR 2018-10-25 11:15:21,055 basehttp 124 "POST /users/ HTTP/1.1" 507 35
+INFO 2018-10-25 11:18:19,193 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:18:19,312 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:18:29,688 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+ERROR 2018-10-25 11:18:29,730 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 63, in validate
+    if not User.objects.filter(attrs.get('allow')):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 781, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 799, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1260, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1286, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1161, in build_filter
+    arg, value = filter_expr
+TypeError: 'bool' object is not iterable
+INFO 2018-10-25 11:18:29,737 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 11:18:29,845 basehttp 124 "POST /users/ HTTP/1.1" 500 18980
+INFO 2018-10-25 11:20:10,337 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:20:10,417 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:20:29,486 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:20:29,494 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 11:20:29,508 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 438, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+ERROR 2018-10-25 11:20:29,637 basehttp 124 "POST /users/ HTTP/1.1" 500 17815
+INFO 2018-10-25 11:24:36,326 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:24:36,342 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:24:55,394 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:24:55,399 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:24:55,415 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+ERROR 2018-10-25 11:24:55,447 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 438, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+ERROR 2018-10-25 11:24:55,564 basehttp 124 "POST /users/ HTTP/1.1" 500 17815
+INFO 2018-10-25 11:25:47,264 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:25:47,361 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:25:57,512 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:25:57,514 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+ERROR 2018-10-25 11:25:57,612 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'User' object has no attribute 'password2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `password2` on serializer `UserCreateSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'password2'.
+ERROR 2018-10-25 11:25:57,985 basehttp 124 "POST /users/ HTTP/1.1" 500 19084
+INFO 2018-10-25 11:28:18,946 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:28:19,071 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:28:29,505 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:28:29,514 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 11:28:29,516 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:30:19,732 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:30:19,791 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 11:30:35,465 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:30:35,470 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+ERROR 2018-10-25 11:30:35,570 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'User' object has no attribute 'sms_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 22, in create
+    headers = self.get_success_headers(serializer.data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sms_code` on serializer `UserCreateSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `User` instance.
+Original exception text was: 'User' object has no attribute 'sms_code'.
+ERROR 2018-10-25 11:30:35,735 basehttp 124 "POST /users/ HTTP/1.1" 500 19080
+INFO 2018-10-25 11:31:36,324 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 11:31:36,434 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+WARNING 2018-10-25 11:31:46,626 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 11:31:46,644 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 11:31:46,654 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 12:04:41,192 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 12:04:41,278 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+INFO 2018-10-25 12:04:56,464 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-25 12:04:56,508 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-25 12:04:56,509 basehttp 124 "GET /mobiles/15675456179/count/ HTTP/1.1" 200 34
+WARNING 2018-10-25 12:04:56,545 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-25 12:05:15,530 basehttp 124 "GET /usernames/1234567/count/ HTTP/1.1" 200 32
+INFO 2018-10-25 12:05:30,800 basehttp 124 "GET /mobiles/15675456178/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 12:05:53,865 basehttp 124 "GET /mobiles/15675456178/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 12:05:53,868 basehttp 124 "GET /sms_code/15675456178/ HTTP/1.1" 200 16
+INFO 2018-10-25 12:06:15,212 basehttp 124 "GET /usernames/1234567/count/ HTTP/1.1" 200 32
+INFO 2018-10-25 12:06:15,228 basehttp 124 "GET /mobiles/15675456178/count/ HTTP/1.1" 200 34
+INFO 2018-10-25 12:06:15,358 basehttp 124 "POST /users/ HTTP/1.1" 201 52
+INFO 2018-10-26 16:36:25,893 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+ERROR 2018-10-26 16:36:25,996 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 33, in _get_backends
+    'No authentication backends have been defined. Does '
+django.core.exceptions.ImproperlyConfigured: No authentication backends have been defined. Does AUTHENTICATION_BACKENDS contain anything?
+ERROR 2018-10-26 16:36:26,091 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 18519
+ERROR 2018-10-26 16:37:11,548 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 33, in _get_backends
+    'No authentication backends have been defined. Does '
+django.core.exceptions.ImproperlyConfigured: No authentication backends have been defined. Does AUTHENTICATION_BACKENDS contain anything?
+ERROR 2018-10-26 16:37:11,587 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 18519
+ERROR 2018-10-26 16:37:18,758 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 33, in _get_backends
+    'No authentication backends have been defined. Does '
+django.core.exceptions.ImproperlyConfigured: No authentication backends have been defined. Does AUTHENTICATION_BACKENDS contain anything?
+ERROR 2018-10-26 16:37:18,779 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 18519
+ERROR 2018-10-26 16:37:20,514 exception 135 Internal Server Error: /authorizations/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/views.py", line 57, in post
+    if serializer.is_valid():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework_jwt/serializers.py", line 50, in validate
+    user = authenticate(**credentials)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 33, in _get_backends
+    'No authentication backends have been defined. Does '
+django.core.exceptions.ImproperlyConfigured: No authentication backends have been defined. Does AUTHENTICATION_BACKENDS contain anything?
+ERROR 2018-10-26 16:37:20,557 basehttp 124 "POST /authorizations/ HTTP/1.1" 500 18519
+INFO 2018-10-26 16:37:30,228 basehttp 124 "GET /usernames/12345678/count/ HTTP/1.1" 200 33
+INFO 2018-10-26 16:37:49,391 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:37:49,479 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:37:49,622 basehttp 124 "GET /sms_code/15555555559/ HTTP/1.1" 200 16
+INFO 2018-10-26 16:38:10,154 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-26 16:38:10,161 basehttp 124 "GET /usernames/12345678/count/ HTTP/1.1" 200 33
+INFO 2018-10-26 16:38:10,171 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+ERROR 2018-10-26 16:38:10,249 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 78, in create
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2018-10-26 16:38:10,325 basehttp 124 "POST /users/ HTTP/1.1" 500 18297
+INFO 2018-10-26 16:38:12,849 basehttp 124 "GET /usernames/12345678/count/ HTTP/1.1" 200 33
+INFO 2018-10-26 16:38:12,876 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 16:38:12,880 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 16:38:32,132 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:03,758 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:06,229 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:06,306 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2018-10-26 16:59:06,361 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 16:59:06,363 basehttp 124 "GET /usernames/12345678/count/ HTTP/1.1" 200 33
+INFO 2018-10-26 16:59:06,367 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:10,399 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:13,134 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 16:59:13,237 basehttp 124 "GET /sms_code/15555555559/ HTTP/1.1" 200 16
+INFO 2018-10-26 16:59:50,797 basehttp 124 "GET /usernames/12345678/count/ HTTP/1.1" 200 33
+INFO 2018-10-26 16:59:50,812 basehttp 124 "GET /mobiles/15555555559/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 16:59:50,824 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+WARNING 2018-10-26 16:59:56,769 basehttp 124 "GET /users/ HTTP/1.1" 405 8456
+INFO 2018-10-26 16:59:56,873 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,875 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,878 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,947 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,955 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,960 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,967 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,969 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,989 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:56,999 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-10-26 16:59:57,417 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2018-10-26 16:59:57,931 base 152 Not Found: /favicon.ico
+WARNING 2018-10-26 16:59:57,943 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 2977
+INFO 2018-10-26 17:19:09,905 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-26 17:19:10,139 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-10-26 17:19:55,407 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-10-26 17:23:52,124 basehttp 124 "GET /usernames/1234567/count/ HTTP/1.1" 200 32
+INFO 2018-10-26 17:23:58,983 basehttp 124 "GET /usernames/1234567/count/ HTTP/1.1" 200 32
+INFO 2018-10-26 17:24:19,074 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 17:24:47,483 basehttp 124 "GET /mobiles/17777777777/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 17:24:47,641 basehttp 124 "GET /mobiles/17777777777/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 17:24:47,683 basehttp 124 "GET /sms_code/17777777777/ HTTP/1.1" 200 16
+INFO 2018-10-26 17:25:13,359 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-26 17:25:13,366 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 17:25:13,402 basehttp 124 "GET /mobiles/17777777777/count/ HTTP/1.1" 200 34
+ERROR 2018-10-26 17:25:13,615 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 78, in create
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2018-10-26 17:25:13,733 basehttp 124 "POST /users/ HTTP/1.1" 500 18336
+INFO 2018-10-26 19:25:24,100 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 19:25:27,700 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 19:25:31,118 basehttp 124 "GET /usernames/1234566543211/count/ HTTP/1.1" 200 38
+INFO 2018-10-26 19:25:34,245 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 19:25:43,531 basehttp 124 "GET /usernames/123456654321/count/ HTTP/1.1" 200 37
+INFO 2018-10-26 19:26:16,952 basehttp 124 "GET /usernames/666666/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 19:27:43,419 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-26 19:27:54,967 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:28:15,499 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:28:20,751 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:28:20,860 basehttp 124 "GET /sms_code/15612341234/ HTTP/1.1" 200 16
+INFO 2018-10-26 19:28:39,268 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:28:39,277 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-26 19:28:39,281 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+ERROR 2018-10-26 19:28:39,371 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/serializers.py", line 78, in create
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2018-10-26 19:28:39,437 basehttp 124 "POST /users/ HTTP/1.1" 500 18348
+INFO 2018-10-26 19:28:48,505 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:28:48,520 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:28:48,529 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:03,514 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:03,537 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:03,542 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:08,086 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:08,151 basehttp 124 "GET /sms_code/15612341234/ HTTP/1.1" 200 16
+INFO 2018-10-26 19:35:33,808 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:33,819 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:33,835 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:35,518 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:35,598 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:35,612 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:36,347 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:36,355 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:36,373 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:36,543 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:36,566 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:36,598 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:36,702 basehttp 124 "GET /usernames/123456789/count/ HTTP/1.1" 200 34
+WARNING 2018-10-26 19:35:36,737 basehttp 124 "POST /users/ HTTP/1.1" 400 46
+INFO 2018-10-26 19:35:36,747 basehttp 124 "GET /mobiles/15612341234/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:35:46,601 basehttp 124 "GET /usernames/1234567899/count/ HTTP/1.1" 200 35
+INFO 2018-10-26 19:35:57,758 basehttp 124 "GET /mobiles/15612341233/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:36:14,571 basehttp 124 "GET /sms_code/15612341233/ HTTP/1.1" 200 16
+INFO 2018-10-26 19:36:14,588 basehttp 124 "GET /mobiles/15612341233/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:36:32,620 basehttp 124 "GET /usernames/1234567899/count/ HTTP/1.1" 200 35
+INFO 2018-10-26 19:36:32,625 basehttp 124 "GET /mobiles/15612341233/count/ HTTP/1.1" 200 34
+INFO 2018-10-26 19:36:32,690 basehttp 124 "POST /users/ HTTP/1.1" 201 234
+WARNING 2018-10-28 09:11:00,521 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:00,524 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:01,862 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:01,862 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:02,094 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:02,095 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:02,305 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:02,308 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:03,298 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:03,304 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:04,302 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:04,302 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:04,650 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:04,651 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:05,008 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:05,011 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:05,189 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:05,190 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:05,623 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:05,625 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:05,859 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:05,865 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:06,420 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:06,421 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:06,624 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:06,631 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:10,644 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:10,645 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:11,844 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:11,845 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:12,487 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:12,488 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:17,726 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:17,728 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:18,230 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:18,232 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:18,669 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:18,669 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:21,873 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:21,874 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:22,256 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:22,258 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:22,450 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:22,454 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:22,934 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:22,936 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:24,337 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:24,338 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:31,735 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:31,740 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 09:11:43,467 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 09:11:43,471 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3093
+WARNING 2018-10-28 10:27:18,585 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:27:18,587 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+WARNING 2018-10-28 10:27:21,677 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:27:21,700 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+WARNING 2018-10-28 10:27:32,648 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:27:32,676 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+WARNING 2018-10-28 10:29:28,844 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:29:28,849 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+WARNING 2018-10-28 10:31:37,312 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:31:37,314 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+WARNING 2018-10-28 10:31:49,022 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 10:31:49,023 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 3262
+ERROR 2018-10-28 10:33:11,553 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 18, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 23, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 10:33:11,639 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 10:33:16,205 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 18, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 23, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 10:33:16,244 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 10:37:33,698 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 23, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 10:37:33,747 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 10:37:39,308 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 23, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 10:37:39,362 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 10:39:23,924 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 25, in __init__
+    self.client_secret = client_secret or settings.QQ_CLIENT_SECRET
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_SECRET'
+ERROR 2018-10-28 10:39:23,976 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17886
+ERROR 2018-10-28 10:39:29,832 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 25, in __init__
+    self.client_secret = client_secret or settings.QQ_CLIENT_SECRET
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_SECRET'
+ERROR 2018-10-28 10:39:29,891 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17886
+ERROR 2018-10-28 10:44:10,259 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 22, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 10:44:10,305 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:27:10,227 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 20, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 21, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:27:10,304 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:29:41,899 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 20, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 20, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:29:41,947 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:37:45,472 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 20, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 20, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:37:45,505 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:37:46,740 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 20, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 20, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:37:46,770 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:41:07,673 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 20, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:41:07,717 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+ERROR 2018-10-28 11:41:20,849 exception 135 Internal Server Error: /oauth/qq/authorization/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 19, in get
+    oauthqq = OAuthQQ(state=state)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 20, in __init__
+    self.client_id = client_id or settings.QQ_CLIENT_ID
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py", line 57, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'QQ_CLIENT_ID'
+ERROR 2018-10-28 11:41:20,877 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 500 17866
+INFO 2018-10-28 11:43:02,389 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2018-10-28 14:17:56,315 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:17:56,323 basehttp 124 "GET /oauth/qq/users/?code=7308DBA4665A6F0BA16633B88A13D124 HTTP/1.1" 404 3257
+WARNING 2018-10-28 14:19:03,451 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:19:03,452 basehttp 124 "GET /oauth/qq/users/?code=0EE191F82D15E8E60179A126C2B617F7 HTTP/1.1" 404 3257
+INFO 2018-10-28 14:23:13,605 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 14:23:34,368 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+WARNING 2018-10-28 14:23:58,403 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:23:58,411 basehttp 124 "GET /oauth/qq/users/?code=AF25A73FD77F99DC24239B767E71E01D HTTP/1.1" 404 3257
+ERROR 2018-10-28 14:31:54,436 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'tb_oauth_qq.openid' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 41, in get
+    qquser = QQUser.objects.get(openid=openid)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 373, in get
+    num = len(clone)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 876, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'tb_oauth_qq.openid' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 45, in get
+    data = tjws.dumps({'openid': openid}, constants.BIND_TOKEN_EXPIRES)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/tjws.py", line 10, in dumps
+    result =serializer.dump(data).decode()
+TypeError: dump() missing 1 required positional argument: 'f'
+ERROR 2018-10-28 14:31:54,542 basehttp 124 "GET /oauth/qq/users/?code=82CC4D4E4BAF4E0F5F57157C477D75DD HTTP/1.1" 500 23597
+WARNING 2018-10-28 14:33:38,740 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:33:38,741 basehttp 124 "GET /oauth/qq/users/?code=BE7A26FCBC5FD1D7C06D4186BA179250 HTTP/1.1" 404 3257
+ERROR 2018-10-28 14:35:06,420 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'tb_oauth_qq.openid' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 41, in get
+    qquser = QQUser.objects.get(openid=openid)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 373, in get
+    num = len(clone)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 1102, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 876, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1054, "Unknown column 'tb_oauth_qq.openid' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 45, in get
+    data = tjws.dumps({'openid': openid}, constants.BIND_TOKEN_EXPIRES)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/tjws.py", line 10, in dumps
+    result =serializer.dump(data).decode()
+TypeError: dump() missing 1 required positional argument: 'f'
+ERROR 2018-10-28 14:35:06,592 basehttp 124 "GET /oauth/qq/users/?code=CAD14D2075796FF3276945E9CB008E42 HTTP/1.1" 500 23597
+INFO 2018-10-28 14:37:03,693 basehttp 124 "GET /oauth/qq/users/?code=72242E2221AE20D2454278BF74584FE5 HTTP/1.1" 200 190
+INFO 2018-10-28 14:37:36,332 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 200 16
+INFO 2018-10-28 14:37:45,532 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 14:37:45,618 exceptions 25 [<oauth.views.QQLoginView object at 0x7f5e6cedb358>] (1054, "Unknown column 'openid' in 'field list'")
+ERROR 2018-10-28 14:37:45,619 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 14:37:50,412 exceptions 25 [<oauth.views.QQLoginView object at 0x7f5e6cf09908>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 14:37:50,413 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 14:38:30,294 exceptions 25 [<oauth.views.QQLoginView object at 0x7f5e6cf15748>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 14:38:30,297 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 14:38:32,893 exceptions 25 [<oauth.views.QQLoginView object at 0x7f5e6ce9fbe0>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 14:38:32,895 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 14:39:22,885 exceptions 25 [<oauth.views.QQLoginView object at 0x7f5e6cf154e0>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 14:39:22,888 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+WARNING 2018-10-28 14:44:36,515 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:44:36,542 basehttp 124 "GET /oauth/qq/users/?code=72242E2221AE20D2454278BF74584FE5 HTTP/1.1" 404 3427
+WARNING 2018-10-28 14:44:50,998 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:44:51,009 basehttp 124 "GET /oauth/qq/users/?code=66CA5B9E2772A9DB8EC3D7AE7F8156D5 HTTP/1.1" 404 3427
+WARNING 2018-10-28 14:48:03,424 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 14:48:03,429 basehttp 124 "GET /oauth/qq/users/?code=2573DBD8DEA0FBA162EE6A7E8B8709C8 HTTP/1.1" 404 3428
+INFO 2018-10-28 14:49:00,395 basehttp 124 "GET /oauth/qq/users/?code=4878B6BA7BA2531719BCB3915CDAEF1D HTTP/1.1" 200 190
+INFO 2018-10-28 14:49:10,782 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 200 16
+INFO 2018-10-28 14:49:29,313 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 14:49:29,406 exceptions 25 [<oauth.views.QQLoginView object at 0x7f4ec438e2b0>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 14:49:29,407 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 14:51:27,851 qq_sdk 59 code=None msg=None
+ERROR 2018-10-28 14:51:27,852 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 34, in get
+    token = oauthqq.get_access_token(code)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 60, in get_access_token
+    raise Exception('获取access token失败')
+Exception: 获取access token失败
+ERROR 2018-10-28 14:51:27,922 basehttp 124 "GET /oauth/qq/users/?code=4878B6BA7BA2531719BCB3915CDAEF1D HTTP/1.1" 500 18163
+INFO 2018-10-28 14:51:52,764 basehttp 124 "GET /oauth/qq/users/?code=AD2A77E51347765F0E2A49D441A9A7BC HTTP/1.1" 200 190
+INFO 2018-10-28 14:52:04,958 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 200 16
+WARNING 2018-10-28 14:52:19,245 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 405 46
+WARNING 2018-10-28 14:52:36,450 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 405 46
+WARNING 2018-10-28 15:00:29,001 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 15:00:29,004 basehttp 124 "GET /oauth/qq/users/?code=9AD025124E472C7064EDAB2B1FCA019E HTTP/1.1" 404 2936
+WARNING 2018-10-28 15:00:43,658 base 152 Not Found: /oauth/qq/users/
+WARNING 2018-10-28 15:00:43,661 basehttp 124 "GET /oauth/qq/users/?code=621D8A20F92BE7CC7AF4579BB7BA8028 HTTP/1.1" 404 2936
+INFO 2018-10-28 15:03:03,222 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 15:03:18,155 basehttp 124 "GET /oauth/qq/users/?code=6A05DAB2FCC27D20CCDD2C0692E2637B HTTP/1.1" 200 190
+INFO 2018-10-28 15:05:06,769 basehttp 124 "GET /sms_code/15555555556/ HTTP/1.1" 200 16
+INFO 2018-10-28 15:05:23,275 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 15:05:23,383 exceptions 25 [<oauth.views.QQLoginView object at 0x7fb0aeeca400>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 15:05:23,385 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 15:06:42,193 basehttp 124 "GET /sms_code/15555555556/ HTTP/1.1" 200 16
+WARNING 2018-10-28 15:06:53,769 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 405 46
+INFO 2018-10-28 15:07:46,766 basehttp 124 "GET /sms_code/15555555556/ HTTP/1.1" 200 16
+WARNING 2018-10-28 15:07:56,544 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 405 46
+WARNING 2018-10-28 15:08:08,705 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 405 46
+ERROR 2018-10-28 15:09:34,854 qq_sdk 59 code=None msg=None
+ERROR 2018-10-28 15:09:34,855 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 34, in get
+    token = oauthqq.get_access_token(code)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 60, in get_access_token
+    raise Exception('获取access token失败')
+Exception: 获取access token失败
+ERROR 2018-10-28 15:09:35,005 basehttp 124 "GET /oauth/qq/users/?code=6A05DAB2FCC27D20CCDD2C0692E2637B HTTP/1.1" 500 18163
+INFO 2018-10-28 15:10:00,203 basehttp 124 "GET /oauth/qq/users/?code=23F971893C6A4578121D838F15C78288 HTTP/1.1" 200 190
+INFO 2018-10-28 15:11:01,996 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 200 16
+ERROR 2018-10-28 15:11:14,894 exceptions 25 [<oauth.views.QQLoginView object at 0x7f4f5d613b38>] (1062, "Duplicate entry '15555555555' for key 'username'")
+ERROR 2018-10-28 15:11:14,901 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 15:12:33,630 basehttp 124 "GET /sms_code/15555555559/ HTTP/1.1" 200 16
+ERROR 2018-10-28 15:12:42,275 exceptions 25 [<oauth.views.QQLoginView object at 0x7f4f5d5b8dd8>] (1054, "Unknown column 'openid' in 'field list'")
+ERROR 2018-10-28 15:12:42,286 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 15:22:38,962 basehttp 124 "GET /sms_code/15555555559/ HTTP/1.1" 200 16
+INFO 2018-10-28 15:22:54,099 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+INFO 2018-10-28 15:22:54,151 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 200 56
+INFO 2018-10-28 15:24:26,071 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2018-10-28 15:24:26,218 base 152 Not Found: /users/
+WARNING 2018-10-28 15:24:26,232 basehttp 124 "GET /users/ HTTP/1.1" 404 2641
+INFO 2018-10-28 15:25:36,077 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-28 15:25:36,090 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:25:36,091 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:25:41,957 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:25:41,959 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:26:22,187 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:26:22,188 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:26:23,440 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:26:23,441 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:26:23,872 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:26:23,875 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:26:24,110 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:26:24,111 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+INFO 2018-10-28 15:30:51,444 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-28 15:30:51,482 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:30:51,483 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:31:48,234 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:31:48,238 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:32:11,477 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:32:11,479 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:32:12,518 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:32:12,524 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+WARNING 2018-10-28 15:32:12,694 base 152 Not Found: /authorizations/
+WARNING 2018-10-28 15:32:12,695 basehttp 124 "POST /authorizations/ HTTP/1.1" 404 2669
+INFO 2018-10-28 15:44:01,957 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-28 15:44:02,034 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 211
+INFO 2018-10-28 15:44:57,869 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 15:45:12,388 basehttp 124 "GET /oauth/qq/users/?code=6120896C06ACBBFF3179A7746303144A HTTP/1.1" 200 190
+INFO 2018-10-28 15:45:32,685 basehttp 124 "GET /sms_code/15555555558/ HTTP/1.1" 200 16
+INFO 2018-10-28 15:45:43,976 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 15:45:44,031 exceptions 25 [<oauth.views.QQLoginView object at 0x7f9b199c84e0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 15:45:44,032 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 15:45:46,366 exceptions 25 [<oauth.views.QQLoginView object at 0x7f9b199d5f28>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 15:45:46,367 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 15:47:01,719 basehttp 124 "GET /sms_code/15675451234/ HTTP/1.1" 200 16
+ERROR 2018-10-28 15:47:11,614 exceptions 25 [<oauth.views.QQLoginView object at 0x7f9b199e79b0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 15:47:11,617 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 15:49:58,740 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 15:50:17,786 basehttp 124 "GET /oauth/qq/users/?code=3C3A0DC487CE278CD975AAB0CF86C355 HTTP/1.1" 200 190
+INFO 2018-10-28 15:53:25,860 basehttp 124 "GET /oauth/qq/users/?code=42416A16ABC858E60E4934715E1993B2 HTTP/1.1" 200 190
+INFO 2018-10-28 15:53:48,760 basehttp 124 "GET /sms_code/17612345678/ HTTP/1.1" 200 16
+INFO 2018-10-28 15:53:59,403 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 15:53:59,457 exceptions 25 [<oauth.views.QQLoginView object at 0x7f329c8aa630>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 15:53:59,459 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 16:57:36,926 basehttp 124 "GET /usernames/15612345678/count/ HTTP/1.1" 200 36
+INFO 2018-10-28 16:57:53,707 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 16:58:00,216 basehttp 124 "GET /mobiles/15612345678/count/ HTTP/1.1" 200 34
+INFO 2018-10-28 16:58:00,324 basehttp 124 "GET /mobiles/15612345678/count/ HTTP/1.1" 200 34
+INFO 2018-10-28 16:58:00,416 basehttp 124 "GET /sms_code/15612345678/ HTTP/1.1" 200 16
+INFO 2018-10-28 16:58:11,658 basehttp 124 "GET /usernames/123456/count/ HTTP/1.1" 200 31
+INFO 2018-10-28 16:58:11,666 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-28 16:58:11,674 basehttp 124 "GET /mobiles/15612345678/count/ HTTP/1.1" 200 34
+INFO 2018-10-28 16:58:11,762 basehttp 124 "POST /users/ HTTP/1.1" 201 225
+INFO 2018-10-28 16:58:26,639 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-28 16:58:26,690 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-28 16:58:43,350 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+WARNING 2018-10-28 16:58:49,826 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 16:58:49,828 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 2913
+WARNING 2018-10-28 16:58:51,313 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 16:58:51,315 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 2913
+WARNING 2018-10-28 16:58:54,322 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-28 16:58:54,323 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 2913
+INFO 2018-10-28 17:00:02,620 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 17:01:28,525 basehttp 124 "GET /oauth/qq/users/?code=9D9AFCBB78AA9A24EE4AEE9A19520059 HTTP/1.1" 200 190
+INFO 2018-10-28 17:01:51,794 basehttp 124 "GET /sms_code/15612345679/ HTTP/1.1" 200 16
+INFO 2018-10-28 17:02:03,716 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 17:02:03,779 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 70, in post
+    'username':qquser.user.usernam,
+AttributeError: 'User' object has no attribute 'usernam'
+ERROR 2018-10-28 17:02:03,851 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 500 18005
+ERROR 2018-10-28 17:02:05,626 exceptions 25 [<oauth.views.QQLoginView object at 0x7efe4fb8c7f0>] (1062, "Duplicate entry '15612345679' for key 'username'")
+ERROR 2018-10-28 17:02:05,627 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 17:06:54,537 qq_sdk 59 code=None msg=None
+ERROR 2018-10-28 17:06:54,538 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 34, in get
+    token = oauthqq.get_access_token(code)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 60, in get_access_token
+    raise Exception('获取access token失败')
+Exception: 获取access token失败
+ERROR 2018-10-28 17:06:54,587 basehttp 124 "GET /oauth/qq/users/?code=9D9AFCBB78AA9A24EE4AEE9A19520059 HTTP/1.1" 500 18209
+ERROR 2018-10-28 17:06:57,852 qq_sdk 59 code=None msg=None
+ERROR 2018-10-28 17:06:57,853 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 34, in get
+    token = oauthqq.get_access_token(code)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 60, in get_access_token
+    raise Exception('获取access token失败')
+Exception: 获取access token失败
+ERROR 2018-10-28 17:06:57,871 basehttp 124 "GET /oauth/qq/users/?code=9D9AFCBB78AA9A24EE4AEE9A19520059 HTTP/1.1" 500 18209
+INFO 2018-10-28 17:08:42,472 basehttp 124 "GET /oauth/qq/users/?code=1D05B53754AEA5E1B134889849FAF8C2 HTTP/1.1" 200 190
+INFO 2018-10-28 17:08:50,486 basehttp 124 "GET /sms_code/15675456179/ HTTP/1.1" 200 16
+ERROR 2018-10-28 17:08:59,873 exceptions 25 [<oauth.views.QQLoginView object at 0x7fbea508a1d0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 17:08:59,875 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 17:14:45,918 basehttp 124 "GET /sms_code/17612345678/ HTTP/1.1" 200 16
+INFO 2018-10-28 17:14:58,697 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 17:14:58,751 exceptions 25 [<oauth.views.QQLoginView object at 0x7fbea50ab6d8>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 17:14:58,752 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 17:16:12,484 qq_sdk 59 code=None msg=None
+ERROR 2018-10-28 17:16:12,485 exception 135 Internal Server Error: /oauth/qq/users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/views.py", line 34, in get
+    token = oauthqq.get_access_token(code)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/oauth/qq_sdk.py", line 60, in get_access_token
+    raise Exception('获取access token失败')
+Exception: 获取access token失败
+ERROR 2018-10-28 17:16:12,562 basehttp 124 "GET /oauth/qq/users/?code=1D05B53754AEA5E1B134889849FAF8C2 HTTP/1.1" 500 18209
+INFO 2018-10-28 17:16:27,834 basehttp 124 "GET /oauth/qq/users/?code=C45C40069D8F63DF8054DBA5EF04AFFD HTTP/1.1" 200 190
+INFO 2018-10-28 17:16:50,896 basehttp 124 "GET /sms_code/15688888888/ HTTP/1.1" 200 16
+ERROR 2018-10-28 17:17:00,458 exceptions 25 [<oauth.views.QQLoginView object at 0x7fbea486dfd0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 17:17:00,463 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 17:21:51,537 basehttp 124 "GET /sms_code/15688888888/ HTTP/1.1" 200 16
+ERROR 2018-10-28 17:22:07,340 exceptions 25 [<oauth.views.QQLoginView object at 0x7fbea480ada0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 17:22:07,341 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 17:24:42,889 basehttp 124 "GET /sms_code/15688888888/ HTTP/1.1" 200 16
+ERROR 2018-10-28 17:24:51,782 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0a841f1320>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 17:24:51,783 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 17:27:07,966 basehttp 124 "GET /sms_code/15688888888/ HTTP/1.1" 200 16
+INFO 2018-10-28 17:27:25,582 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+INFO 2018-10-28 17:27:25,599 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 200 56
+INFO 2018-10-28 17:27:56,928 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 17:28:19,769 basehttp 124 "GET /oauth/qq/users/?code=A336CE807B440F2EB617161A7222C9A8 HTTP/1.1" 200 190
+INFO 2018-10-28 17:28:30,081 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 200 16
+INFO 2018-10-28 17:28:44,593 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 200 218
+INFO 2018-10-28 17:30:12,103 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 17:30:33,057 basehttp 124 "GET /oauth/qq/users/?code=187DDA117173EBC398D98E7B87AEB3E5 HTTP/1.1" 200 218
