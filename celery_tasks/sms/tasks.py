@@ -1,4 +1,6 @@
-from  celery_tasks.main import app
+from celery_tasks.main import app
+
+
 # from Buybuybuy.utils.ytx_sdk.sendSMS import CCP
 
 @app.task(name='send_sms_code')

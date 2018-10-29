@@ -48,12 +48,12 @@ class UserDetailView(generics.RetrieveAPIView):
     def get_object(self):
         return self.request.user
 
-class EmailView(UpdateAPIView):
-    '''保存用户邮箱'''
-    permission_classes = [IsAuthenticated]
-    #修改当前登录用户的属性,所以不查询
-    #queryset
-    serializer_class = EmailSerializer
-
-    def get_object(self):
-        return self.request.user
+# class EmailView(UpdateAPIView):
+#     '''保存用户邮箱'''
+#     permission_classes = [IsAuthenticated]
+#     #修改当前登录用户的属性,所以不查询
+#     #queryset
+#     serializer_class = EmailSerializer
+#
+#     def get_object(self):
+#         return self.request.user
