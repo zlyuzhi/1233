@@ -1839,3 +1839,147 @@ INFO 2018-10-28 17:28:30,081 basehttp 124 "GET /sms_code/15555555555/ HTTP/1.1" 
 INFO 2018-10-28 17:28:44,593 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 200 218
 INFO 2018-10-28 17:30:12,103 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
 INFO 2018-10-28 17:30:33,057 basehttp 124 "GET /oauth/qq/users/?code=187DDA117173EBC398D98E7B87AEB3E5 HTTP/1.1" 200 218
+INFO 2018-10-28 18:33:53,459 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-10-28 18:33:53,538 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-10-28 18:34:00,013 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-28 18:34:07,679 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 18:34:45,146 basehttp 124 "GET /oauth/qq/users/?code=96EF8FD130DD0BB85C01EF2CA181FD04 HTTP/1.1" 200 190
+INFO 2018-10-28 18:34:57,885 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-28 18:35:05,862 basehttp 124 "OPTIONS /oauth/qq/users/ HTTP/1.1" 200 0
+ERROR 2018-10-28 18:35:05,932 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0557cf2588>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 18:35:05,934 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 18:35:10,180 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0557cf2da0>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 18:35:10,182 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 18:35:17,657 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0557cffac8>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 18:35:17,659 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 18:38:28,814 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0557d12f60>] (1062, "Duplicate entry '' for key 'mobile'")
+ERROR 2018-10-28 18:38:28,823 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+ERROR 2018-10-28 18:38:43,211 exceptions 25 [<oauth.views.QQLoginView object at 0x7f0557cff160>] (1146, "Table 'bbb.tb_oauth' doesn't exist")
+ERROR 2018-10-28 18:38:43,212 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 18:39:59,206 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 18:40:14,372 basehttp 124 "GET /oauth/qq/users/?code=F1BBF6E32994D97472B2A4C1482141A8 HTTP/1.1" 200 190
+INFO 2018-10-28 18:40:27,594 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+ERROR 2018-10-28 18:40:38,998 exceptions 25 [<oauth.views.QQLoginView object at 0x7f2fc9100f28>] (1062, "Duplicate entry '17607162138' for key 'username'")
+ERROR 2018-10-28 18:40:38,999 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 507 35
+INFO 2018-10-28 18:43:14,892 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 18:43:25,914 basehttp 124 "GET /oauth/qq/users/?code=9FFAE0B8777855228414B795552DABD7 HTTP/1.1" 200 190
+INFO 2018-10-28 18:43:36,183 basehttp 124 "GET /sms_code/17607162138/ HTTP/1.1" 200 16
+INFO 2018-10-28 18:43:44,458 basehttp 124 "POST /oauth/qq/users/ HTTP/1.1" 200 221
+INFO 2018-10-28 18:44:04,184 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-28 18:44:22,174 basehttp 124 "GET /oauth/qq/users/?code=CEC63778FE206B04E2229FFAAB8755F5 HTTP/1.1" 200 221
+INFO 2018-10-28 18:44:37,660 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-28 18:44:37,725 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-28 18:44:45,110 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2018-10-28 18:44:45,309 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+INFO 2018-10-28 18:56:09,553 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-28 18:56:09,623 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-28 18:56:13,548 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+WARNING 2018-10-28 18:56:13,673 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+WARNING 2018-10-28 18:57:33,055 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+WARNING 2018-10-28 18:57:47,291 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+WARNING 2018-10-28 18:57:49,969 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+WARNING 2018-10-28 18:57:52,947 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+INFO 2018-10-28 18:58:03,951 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+WARNING 2018-10-28 18:58:07,350 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+WARNING 2018-10-28 18:58:09,938 basehttp 124 "GET /users/ HTTP/1.1" 405 45
+ERROR 2018-10-28 18:58:39,828 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 58, in retrieve
+    return Response(serializer.data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1045, in get_fields
+    source, info, model, depth
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1190, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1302, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `email_active` is not valid for model `User`.
+ERROR 2018-10-28 18:58:39,940 basehttp 124 "GET /users/ HTTP/1.1" 500 19622
+INFO 2018-10-28 18:58:53,626 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+WARNING 2018-10-28 18:59:17,665 base 152 Not Found: /users/
+WARNING 2018-10-28 18:59:17,685 basehttp 124 "GET /users/ HTTP/1.1" 404 2961
+ERROR 2018-10-28 19:00:11,507 exception 135 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 58, in retrieve
+    return Response(serializer.data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1045, in get_fields
+    source, info, model, depth
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1190, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1302, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `email_active` is not valid for model `User`.
+ERROR 2018-10-28 19:00:11,852 basehttp 124 "GET /users/ HTTP/1.1" 500 19622
+                                                                                                                                                                                                                                                                                                                                                                                                        WARNING 2018-10-29 09:58:25,530 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-29 09:58:25,532 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 2913
+WARNING 2018-10-29 09:58:28,663 base 152 Not Found: /oauth/qq/authorization/
+WARNING 2018-10-29 09:58:28,664 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 404 2913
+INFO 2018-10-29 09:59:56,401 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 195
+INFO 2018-10-29 21:19:58,659 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-29 21:19:58,803 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-29 21:20:06,490 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-29 21:20:06,564 basehttp 124 "GET /users/ HTTP/1.1" 200 83
+INFO 2018-10-29 21:20:06,598 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-29 21:20:06,651 base 152 Not Found: /browse_histories/
+WARNING 2018-10-29 21:20:06,656 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
+INFO 2018-10-29 21:20:22,057 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-10-29 21:20:22,128 basehttp 124 "PUT /emails/ HTTP/1.1" 200 26

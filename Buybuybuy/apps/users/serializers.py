@@ -15,11 +15,10 @@ class UserCreateSerializer(serializers.Serializer):
         'max_length': '用户名过长(5-20)'
     }))
     password = serializers.CharField(write_only=True)
-    password2=serializers.CharField(write_only=True)
-    sms_code =serializers.CharField(write_only=True)
-    mobile=serializers.CharField()
-    allow =serializers.BooleanField(write_only=True)
-
+    password2 = serializers.CharField(write_only=True)
+    sms_code = serializers.CharField(write_only=True)
+    mobile = serializers.CharField()
+    allow = serializers.BooleanField(write_only=True)
 
     # 验证
     # 1 验证用户名
@@ -33,44 +32,41 @@ class UserCreateSerializer(serializers.Serializer):
         if password != password2:
             raise serializers.ValidationError('两次密码不一致')
 
-        #验证短信验证码
-        #一个从获取的,一个从数据路redis来的
-        sms_code_quest=attrs.get('sms_code')
-        mobile=attrs.get('mobile')
+        # 验证短信验证码
+        # 一个从获取的,一个从数据路redis来的
+        sms_code_quest = attrs.get('sms_code')
+        mobile = attrs.get('mobile')
         # print(mobile)
-        redis_cli=get_redis_connection('sms_code')
-        sms_code_redis=redis_cli.get('sms_code'+mobile)
+        redis_cli = get_redis_connection('sms_code')
+        sms_code_redis = redis_cli.get('sms_code' + mobile)
         # print(sms_code_redis)
-        #先判断是否过期
+        # 先判断是否过期
         if not sms_code_redis:
             raise serializers.ValidationError('短信验证码过期')
-        #强制删除
-        redis_cli.delete('sms_code'+mobile)
-        #换成整型
+        # 强制删除
+        redis_cli.delete('sms_code' + mobile)
+        # 换成整型
         if int(sms_code_redis) != int(sms_code_quest):
             raise serializers.ValidationError('验证码不一致')
 
-        #验证手机
+        # 验证手机
         # 1验证手机号格式
-        if not re.match(r'^1[3-9]\d{9}$',attrs.get('mobile')):
+        if not re.match(r'^1[3-9]\d{9}$', attrs.get('mobile')):
             raise serializers.ValidationError('手机格式错误')
-        #2 验证是否重复
-        count=User.objects.filter(mobile=attrs.get('mobile')).count()
-        if count>0:
+        # 2 验证是否重复
+        count = User.objects.filter(mobile=attrs.get('mobile')).count()
+        if count > 0:
             raise serializers.ValidationError('手机已经被注册')
-
 
         if not attrs.get('allow'):
             raise serializers.ValidationError('请同意协议')
 
         return attrs
 
-
-
-    #保存数据
+    # 保存数据
     def create(self, validated_data):
-        user=User()
-        user.username =validated_data.get('username')
+        user = User()
+        user.username = validated_data.get('username')
         user.set_password(validated_data.get('password'))
         user.mobile = validated_data.get('mobile')
         user.save()
@@ -84,3 +80,17 @@ class UserCreateSerializer(serializers.Serializer):
         user.token = token
 
         return user
+
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'mobile', 'email', 'email_active']
+
+
+class EmailSerializer(serializers.ModelSerializer):
+
+    # 用模型类里面有的属性就用Modelserializer
+    class Meta:
+        model = User
+        fields = ['email']

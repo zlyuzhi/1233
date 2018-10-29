@@ -52,6 +52,7 @@ class QQBindSerializer(serializers.Serializer):
             #创建用户
             user =User()
             user.username =mobile
+            user.mobile=mobile
             user.set_password(password)
             user.save()
         else:
