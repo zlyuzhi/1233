@@ -2021,3 +2021,120 @@ WARNING 2018-10-30 10:16:40,208 base 152 Not Found: /browse_histories/
 WARNING 2018-10-30 10:16:40,209 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
 INFO 2018-10-30 10:16:40,999 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
 INFO 2018-10-30 10:16:41,108 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+ERROR 2018-10-30 11:36:16,759 exception 80 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2018-10-30 11:36:17,156 basehttp 124 "GET / HTTP/1.1" 400 69473
+ERROR 2018-10-30 11:36:17,164 exception 80 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2018-10-30 11:36:17,328 basehttp 124 "GET / HTTP/1.1" 400 69473
+ERROR 2018-10-30 11:36:18,179 exception 80 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2018-10-30 11:36:18,279 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69549
+ERROR 2018-10-30 11:36:18,671 exception 80 Invalid HTTP_HOST header: '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+WARNING 2018-10-30 11:36:18,796 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69549
+INFO 2018-10-30 11:39:50,028 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:39:50,100 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-10-30 11:39:54,085 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:39:54,225 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+INFO 2018-10-30 11:39:54,279 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 11:39:54,344 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 11:39:54,348 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
+WARNING 2018-10-30 11:39:59,930 base 152 Not Found: /areas/
+WARNING 2018-10-30 11:39:59,957 basehttp 124 "GET /areas/ HTTP/1.1" 404 3289
+INFO 2018-10-30 11:39:59,962 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2018-10-30 11:40:00,073 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:40:00,105 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3301
+WARNING 2018-10-30 11:48:29,340 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:48:29,375 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3457
+INFO 2018-10-30 11:48:29,386 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-10-30 11:48:46,801 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 11:48:46,887 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:48:46,894 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3457
+WARNING 2018-10-30 11:49:05,517 base 152 Not Found: /areas/120000/
+WARNING 2018-10-30 11:49:05,523 basehttp 124 "GET /areas/120000/ HTTP/1.1" 404 3466
+INFO 2018-10-30 11:54:11,742 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-10-30 11:54:11,832 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 11:54:11,970 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:54:11,973 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3457
+WARNING 2018-10-30 11:54:16,360 base 152 Not Found: /areas/120000/
+WARNING 2018-10-30 11:54:16,365 basehttp 124 "GET /areas/120000/ HTTP/1.1" 404 3466
+WARNING 2018-10-30 11:55:52,480 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:55:52,489 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3631
+INFO 2018-10-30 11:55:52,508 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 11:55:52,831 base 152 Not Found: /addresses/
+INFO 2018-10-30 11:55:52,834 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 11:55:52,846 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3631
+ERROR 2018-10-30 11:55:55,597 exception 135 Internal Server Error: /areas/120000/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/generics.py", line 210, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 58, in retrieve
+    return Response(serializer.data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1002, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class AreaSubSubSerializer missing "Meta.model" attribute
+ERROR 2018-10-30 11:55:55,704 basehttp 124 "GET /areas/120000/ HTTP/1.1" 500 19197
+WARNING 2018-10-30 11:57:02,765 base 152 Not Found: /addresses/
+WARNING 2018-10-30 11:57:02,770 basehttp 124 "GET /addresses/ HTTP/1.1" 404 3631
+INFO 2018-10-30 11:57:02,784 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-10-30 11:57:05,449 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 125
+INFO 2018-10-30 11:58:38,188 basehttp 124 "GET /areas/330000/ HTTP/1.1" 200 118
+INFO 2018-10-30 11:58:57,564 basehttp 124 "GET /areas/310000/ HTTP/1.1" 200 48
+INFO 2018-10-30 12:02:28,122 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2018-10-30 12:02:29,287 basehttp 124 "GET /areas/130400/ HTTP/1.1" 200 659
+INFO 2018-10-30 12:02:35,412 basehttp 124 "GET /areas/430000/ HTTP/1.1" 200 527
+INFO 2018-10-30 12:02:41,012 basehttp 124 "GET /areas/430500/ HTTP/1.1" 200 449
+INFO 2018-10-30 12:02:45,412 basehttp 124 "GET /areas/430300/ HTTP/1.1" 200 206
+INFO 2018-10-30 14:10:25,769 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2018-10-30 14:10:25,834 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 14:10:25,895 base 152 Not Found: /addresses/
+WARNING 2018-10-30 14:10:25,899 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4472
+INFO 2018-10-30 14:10:28,459 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2018-10-30 14:10:29,851 basehttp 124 "GET /areas/130500/ HTTP/1.1" 200 662
+INFO 2018-10-30 14:13:32,463 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+WARNING 2018-10-30 14:13:32,489 base 152 Not Found: /addresses/
+WARNING 2018-10-30 14:13:32,526 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4472
+WARNING 2018-10-30 14:18:05,453 base 152 Not Found: /addresses/
+WARNING 2018-10-30 14:18:05,469 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4472
+INFO 2018-10-30 14:18:05,523 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-10-30 14:19:48,637 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 14:19:48,695 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-10-30 14:23:15,411 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 14:23:15,482 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-10-30 14:28:47,844 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-10-30 20:07:43,044 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 20:07:43,488 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+INFO 2018-10-30 20:07:43,621 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 20:07:43,664 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 20:07:43,670 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 4493
+INFO 2018-10-30 20:07:46,576 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-10-30 20:07:46,603 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2018-10-30 20:07:47,157 base 152 Not Found: /addresses/
+WARNING 2018-10-30 20:07:47,188 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4472
+INFO 2018-10-30 20:07:50,541 basehttp 124 "GET /areas/140000/ HTTP/1.1" 200 404
+INFO 2018-10-30 20:07:52,118 basehttp 124 "GET /areas/140400/ HTTP/1.1" 200 461

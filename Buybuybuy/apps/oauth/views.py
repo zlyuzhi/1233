@@ -32,9 +32,10 @@ class QQLoginView(APIView):
         # 根据code获取token
         oauthqq = OAuthQQ()
         token = oauthqq.get_access_token(code)
-
+        print(token)
         # 根据token 获取openid
         openid = oauthqq.get_openid(token)
+
 
         # 查询openid 是否存在
         try:
@@ -49,6 +50,7 @@ class QQLoginView(APIView):
             })
         else:
             # 如果存在就状态保存,登录成功
+
             return Response({
                 'user_id': qquser.user.id,
                 'username':qquser.user.username,

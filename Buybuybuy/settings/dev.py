@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'users.apps.UserConfig',
     'verifications.apps.VerificationsConfig',
     'oauth.apps.OauthConfig',
+    'areas.apps.AreasConfig'
 
 ]
 
@@ -237,6 +238,21 @@ REST_FRAMEWORK = {
 
     ),
 }
+
+
+# 设置缓存
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存存储
+    'DEFAULT_USE_CACHE': 'default',
+}
+
+
+
+
+
+
 
 AUTHENTICATION_BACKENDS = [
     'users.utils.UsernameMobileAuthBackend',
