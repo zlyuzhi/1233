@@ -1999,3 +1999,25 @@ WARNING 2018-10-30 09:28:51,473 base 152 Not Found: /browse_histories/
 WARNING 2018-10-30 09:28:51,480 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
 INFO 2018-10-30 09:29:12,518 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
 INFO 2018-10-30 09:29:12,602 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2018-10-30 10:03:30,479 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 10:03:30,674 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+INFO 2018-10-30 10:03:30,692 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 10:03:30,719 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 10:03:30,720 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
+INFO 2018-10-30 10:03:32,513 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-10-30 10:03:32,602 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2018-10-30 10:05:22,024 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+WARNING 2018-10-30 10:05:22,178 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 10:05:22,179 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
+INFO 2018-10-30 10:05:23,183 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2018-10-30 10:10:02,006 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+WARNING 2018-10-30 10:10:02,174 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 10:10:02,178 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
+INFO 2018-10-30 10:10:03,221 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2018-10-30 10:16:39,922 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 10:16:40,166 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+INFO 2018-10-30 10:16:40,180 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 10:16:40,208 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 10:16:40,209 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3322
+INFO 2018-10-30 10:16:40,999 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-10-30 10:16:41,108 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27

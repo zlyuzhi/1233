@@ -4,8 +4,10 @@ from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
+from users import constans
 from users.models import User
 from celery_tasks.email.tasks import send_verify_mail
+from utils import tjws
 
 
 class UserCreateSerializer(serializers.Serializer):
@@ -106,3 +108,16 @@ class EmailSerializer(serializers.ModelSerializer):
         send_verify_mail.delay(email, instance.generate_verify_url())
 
         return instance
+
+class EmailActiveSerializer(serializers.Serializer):
+    token= serializers.CharField(max_length=200)
+    def validate(self, attrs):
+        #获取加密字符串
+        token =attrs.get('token')
+        #解密
+        data_dict =tjws.loads(token,constans.VERIFY_EMAIL_EXPIRES)
+        #判断是否过期
+        if data_dict is None:
+            raise serializers.ValidationError('激活链接已经过期')
+        attrs['user_id']=data_dict.get('user_id')
+        return attrs
