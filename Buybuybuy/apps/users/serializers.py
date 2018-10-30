@@ -5,7 +5,7 @@ from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
 from users import constans
-from users.models import User
+from users.models import User, Address
 from celery_tasks.email.tasks import send_verify_mail
 from utils import tjws
 
@@ -121,3 +121,28 @@ class EmailActiveSerializer(serializers.Serializer):
             raise serializers.ValidationError('激活链接已经过期')
         attrs['user_id']=data_dict.get('user_id')
         return attrs
+
+class  AddressSerializer(serializers.ModelSerializer):
+    #关系属性,使用id接受,不然接受的是个对象,所以要用单独接受
+    province_id=serializers.IntegerField()
+    city_id=serializers.IntegerField()
+    district_id=serializers.IntegerField()
+    #关系属性,改成你字符串输出
+    province = serializers.StringRelatedField(read_only=True)
+    city = serializers.StringRelatedField(read_only=True)
+    district = serializers.StringRelatedField(read_only=True)
+
+    #重写创建,因为视图函数的创建是在这里写的
+    def create(self, validated_data):
+        #默认的实现中,没有指定属性User,则添加时必然会报错,所以需要指定User属性
+        # 现在问题是如何在序列化器中找到user,找request,
+        #user对象不是客户端传过来的
+        validated_data['user']=self.context['request'].user
+        address=super().create(validated_data)
+
+        #address=Address.objects.create(validated_data)
+        return address
+    class Meta:
+        model =Address
+        #拍粗不必要的字段,用户不需要传递,设为当前用户
+        exclude=['is_deleted','create_time','update_time','user']

@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from rest_framework_jwt.views import obtain_jwt_token
-
+from rest_framework.routers import DefaultRouter
 from . import views
 
 # eg:url(r'^book/$',views.BookView.as_view()),
@@ -15,3 +15,6 @@ urlpatterns = [
     url(r'^emails/verification/$', views.EmailActiveView.as_view()),
 
 ]
+router=DefaultRouter()
+router.register('addresses',views.AddressViewSet,base_name='addresses')
+urlpatterns += router.urls

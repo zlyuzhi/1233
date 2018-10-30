@@ -2138,3 +2138,199 @@ WARNING 2018-10-30 20:07:47,157 base 152 Not Found: /addresses/
 WARNING 2018-10-30 20:07:47,188 basehttp 124 "GET /addresses/ HTTP/1.1" 404 4472
 INFO 2018-10-30 20:07:50,541 basehttp 124 "GET /areas/140000/ HTTP/1.1" 200 404
 INFO 2018-10-30 20:07:52,118 basehttp 124 "GET /areas/140400/ HTTP/1.1" 200 461
+INFO 2018-10-30 22:38:20,942 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 22:38:21,259 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+INFO 2018-10-30 22:38:21,281 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 22:38:21,322 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 22:38:21,323 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 5688
+INFO 2018-10-30 22:38:24,547 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2018-10-30 22:38:24,571 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+WARNING 2018-10-30 22:38:24,700 base 152 Not Found: /addresses/
+WARNING 2018-10-30 22:38:24,703 basehttp 124 "GET /addresses/ HTTP/1.1" 404 5667
+INFO 2018-10-30 22:38:28,800 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2018-10-30 22:38:29,966 basehttp 124 "GET /areas/130300/ HTTP/1.1" 200 293
+WARNING 2018-10-30 22:38:58,287 base 152 Not Found: /addresses/
+WARNING 2018-10-30 22:38:58,290 basehttp 124 "POST /addresses/ HTTP/1.1" 404 5668
+WARNING 2018-10-30 22:39:17,830 base 152 Not Found: /addresses/
+WARNING 2018-10-30 22:39:17,838 basehttp 124 "POST /addresses/ HTTP/1.1" 404 5668
+WARNING 2018-10-30 22:39:20,066 base 152 Not Found: /addresses/
+WARNING 2018-10-30 22:39:20,067 basehttp 124 "GET /addresses/ HTTP/1.1" 404 5667
+WARNING 2018-10-30 22:39:20,654 base 152 Not Found: /favicon.ico
+WARNING 2018-10-30 22:39:20,656 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 5670
+WARNING 2018-10-30 22:40:29,842 basehttp 124 "GET /addresses/ HTTP/1.1" 401 5089
+INFO 2018-10-30 22:40:29,931 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:29,932 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:29,967 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:29,975 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:29,989 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:29,996 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:30,013 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:30,016 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:30,020 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:30,025 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2018-10-30 22:40:30,117 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2018-10-30 22:41:04,371 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 22:41:04,425 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-10-30 22:41:08,285 basehttp 124 "GET /users/ HTTP/1.1" 200 98
+WARNING 2018-10-30 22:41:08,401 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 22:41:08,409 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 5696
+INFO 2018-10-30 22:41:12,248 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2018-10-30 22:41:12,285 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/views.py", line 94, in list
+    address_list = self.get_queryset()
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/users/views.py", line 90, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 781, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/query.py", line 799, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1260, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1286, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1164, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1044, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1362, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, emile, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_addr, user_id
+ERROR 2018-10-30 22:41:12,615 basehttp 124 "GET /addresses/ HTTP/1.1" 500 20146
+INFO 2018-10-30 22:41:18,760 basehttp 124 "GET /areas/120000/ HTTP/1.1" 200 74
+INFO 2018-10-30 22:41:21,733 basehttp 124 "GET /areas/120100/ HTTP/1.1" 200 572
+ERROR 2018-10-30 22:41:51,044 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer AddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2018-10-30 22:41:51,073 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19758
+ERROR 2018-10-30 22:42:02,188 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer AddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2018-10-30 22:42:02,266 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19758
+ERROR 2018-10-30 22:44:31,672 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 482, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'updata_time' was included on serializer AddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2018-10-30 22:44:31,734 basehttp 124 "POST /addresses/ HTTP/1.1" 500 19762
+ERROR 2018-10-30 22:45:44,711 exceptions 25 [<users.views.AddressViewSet object at 0x7f29c85ab588>] (1054, "Unknown column 'is_delete' in 'field list'")
+ERROR 2018-10-30 22:45:44,712 basehttp 124 "POST /addresses/ HTTP/1.1" 507 35
+INFO 2018-10-30 22:47:51,388 basehttp 124 "POST /addresses/ HTTP/1.1" 201 232
