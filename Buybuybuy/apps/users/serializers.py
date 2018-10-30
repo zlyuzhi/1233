@@ -3,9 +3,8 @@ import re
 from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
-
-from users.models import User
 from celery_tasks.email.tasks import send_verify_mail
+from users.models import User
 
 
 class UserCreateSerializer(serializers.Serializer):
@@ -90,11 +89,11 @@ class UserDetailSerializer(serializers.ModelSerializer):
 
 
 class EmailSerializer(serializers.ModelSerializer):
-
     # 用模型类里面有的属性就用Modelserializer
     class Meta:
         model = User
         fields = ['email']
+
 
     # 重写修改方法，在修改属性后，需要向邮箱发送邮件
     def update(self, instance, validated_data):
@@ -106,3 +105,18 @@ class EmailSerializer(serializers.ModelSerializer):
         send_verify_mail.delay(email, instance.generate_verify_url())
 
         return instance
+
+    #
+    # def update(self, instance, validated_data):
+    #     # 默认的里面有的方法(且不要写),因为需要向邮箱发送邮件,所以要重写修改方法
+    #     # instance.email = validated_data.get('emil')
+    #     # instance.save()
+    #     email = validated_data.get('email')
+    #     # 因为后面要单独使用Emily,所以独立出来,和原来没有变化
+    #     instance.email = email
+    #     instance.save()
+    #
+    #     # 发送激活邮件：发出邮件即可给出提示，发的过程比较耗时,且与结果没有任何关系，可以在一个新进程中执行
+    #     send_verify_mail.delay(email, instance.generate_verify_url())
+    #     return instance
+
