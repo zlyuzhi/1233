@@ -1983,3 +1983,10 @@ WARNING 2018-10-29 21:20:06,651 base 152 Not Found: /browse_histories/
 WARNING 2018-10-29 21:20:06,656 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
 INFO 2018-10-29 21:20:22,057 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
 INFO 2018-10-29 21:20:22,128 basehttp 124 "PUT /emails/ HTTP/1.1" 200 26
+INFO 2018-10-30 08:58:20,604 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 08:58:20,882 basehttp 124 "GET /users/ HTTP/1.1" 200 83
+INFO 2018-10-30 08:58:20,897 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 08:58:20,920 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 08:58:20,921 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
+INFO 2018-10-30 08:58:56,322 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-10-30 08:58:56,416 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
