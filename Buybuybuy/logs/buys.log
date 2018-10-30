@@ -1990,3 +1990,12 @@ WARNING 2018-10-30 08:58:20,920 base 152 Not Found: /browse_histories/
 WARNING 2018-10-30 08:58:20,921 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
 INFO 2018-10-30 08:58:56,322 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
 INFO 2018-10-30 08:58:56,416 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2018-10-30 09:28:46,381 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-10-30 09:28:46,556 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 207
+INFO 2018-10-30 09:28:51,200 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2018-10-30 09:28:51,326 basehttp 124 "GET /users/ HTTP/1.1" 200 83
+INFO 2018-10-30 09:28:51,420 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2018-10-30 09:28:51,473 base 152 Not Found: /browse_histories/
+WARNING 2018-10-30 09:28:51,480 basehttp 124 "GET /browse_histories/ HTTP/1.1" 404 3152
+INFO 2018-10-30 09:29:12,518 basehttp 124 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2018-10-30 09:29:12,602 basehttp 124 "PUT /emails/ HTTP/1.1" 200 27
