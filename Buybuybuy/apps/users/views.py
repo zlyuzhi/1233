@@ -115,9 +115,9 @@ class AddressViewSet(ModelViewSet):
     def destroy(self, request, *args, **kwargs):
         #根据主键查询对象
         address=self.get_object()
-        print(address)
+
         #逻辑删除
-        address.is_deleted =True
+        address.is_delete =True
         #保存
         address.save()
         #响应

@@ -28,11 +28,11 @@ class QQLoginView(APIView):
     def get(self, request):
         # 获取code
         code = request.query_params.get('code')
-        print(code)
+       
         # 根据code获取token
         oauthqq = OAuthQQ()
         token = oauthqq.get_access_token(code)
-        print(token)
+
         # 根据token 获取openid
         openid = oauthqq.get_openid(token)
 
