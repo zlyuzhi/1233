@@ -47,7 +47,7 @@ class Address(BaseModel):
     #邮箱
     emile=models.CharField(max_length=50,null=True,blank=True)
     #逻辑删除
-    is_deleted =models.BooleanField(default=False)
+    is_delete =models.BooleanField(default=False)
 
     class Meta:
         db_table = 'tb_address'

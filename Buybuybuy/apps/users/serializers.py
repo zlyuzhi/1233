@@ -92,7 +92,6 @@ class UserDetailSerializer(serializers.ModelSerializer):
 
 
 class EmailSerializer(serializers.ModelSerializer):
-
     # 用模型类里面有的属性就用Modelserializer
     class Meta:
         model = User
@@ -100,8 +99,8 @@ class EmailSerializer(serializers.ModelSerializer):
 
     # 重写修改方法，在修改属性后，需要向邮箱发送邮件
     def update(self, instance, validated_data):
-        email=validated_data.get('email')
-        instance.email=email
+        email = validated_data.get('email')
+        instance.email = email
         instance.save()
 
         # 发送邮件,发出邮件即可给出提示，发的过程比较耗时,且不影响结果，可以在一个新进程中执行
@@ -109,40 +108,44 @@ class EmailSerializer(serializers.ModelSerializer):
 
         return instance
 
+
 class EmailActiveSerializer(serializers.Serializer):
-    token= serializers.CharField(max_length=200)
+    token = serializers.CharField(max_length=200)
+
     def validate(self, attrs):
-        #获取加密字符串
-        token =attrs.get('token')
-        #解密
-        data_dict =tjws.loads(token,constans.VERIFY_EMAIL_EXPIRES)
-        #判断是否过期
+        # 获取加密字符串
+        token = attrs.get('token')
+        # 解密
+        data_dict = tjws.loads(token, constans.VERIFY_EMAIL_EXPIRES)
+        # 判断是否过期
         if data_dict is None:
             raise serializers.ValidationError('激活链接已经过期')
-        attrs['user_id']=data_dict.get('user_id')
+        attrs['user_id'] = data_dict.get('user_id')
         return attrs
 
-class  AddressSerializer(serializers.ModelSerializer):
-    #关系属性,使用id接受,不然接受的是个对象,所以要用单独接受
-    province_id=serializers.IntegerField()
-    city_id=serializers.IntegerField()
-    district_id=serializers.IntegerField()
-    #关系属性,改成你字符串输出
+
+class AddressSerializer(serializers.ModelSerializer):
+    # 关系属性,使用id接受,不然接受的是个对象,所以要用单独接受
+    province_id = serializers.IntegerField()
+    city_id = serializers.IntegerField()
+    district_id = serializers.IntegerField()
+    # 关系属性,改成你字符串输出
     province = serializers.StringRelatedField(read_only=True)
     city = serializers.StringRelatedField(read_only=True)
     district = serializers.StringRelatedField(read_only=True)
 
-    #重写创建,因为视图函数的创建是在这里写的
+    # 重写创建,因为视图函数的创建是在这里写的
     def create(self, validated_data):
-        #默认的实现中,没有指定属性User,则添加时必然会报错,所以需要指定User属性
+        # 默认的实现中,没有指定属性User,则添加时必然会报错,所以需要指定User属性
         # 现在问题是如何在序列化器中找到user,找request,
-        #user对象不是客户端传过来的
-        validated_data['user']=self.context['request'].user
-        address=super().create(validated_data)
+        # user对象不是客户端传过来的
+        validated_data['user'] = self.context['request'].user
+        address = super().create(validated_data)
 
-        #address=Address.objects.create(validated_data)
+        # address=Address.objects.create(validated_data)
         return address
+
     class Meta:
-        model =Address
-        #拍粗不必要的字段,用户不需要传递,设为当前用户
-        exclude=['is_deleted','create_time','update_time','user']
+        model = Address
+        # 拍粗不必要的字段,用户不需要传递,设为当前用户
+        exclude = ['is_delete', 'create_time', 'update_time', 'user']
