@@ -7,7 +7,7 @@ from rest_framework_jwt.settings import api_settings
 from users import constans
 from users.models import User, Address
 from celery_tasks.email.tasks import send_verify_mail
-from utils import tjws
+import tjws
 
 
 class UserCreateSerializer(serializers.Serializer):

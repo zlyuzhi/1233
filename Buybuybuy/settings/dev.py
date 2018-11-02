@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'areas.apps.AreasConfig',
     'goods.apps.GoodsConfig',
     'contents.apps.ContentsConfig',
+    'ckeditor',  # 富文本编辑器
+    'ckeditor_uploader',  # 富文本编辑器上传图片模块
 
 ]
 
@@ -284,3 +286,28 @@ EMAIL_HOST_USER = 'zl_8876@163.com'
 EMAIL_HOST_PASSWORD = 'yuzhi846145368'
 #收件人看到的发件人
 EMAIL_FROM = 'zl商城<zl_8876@163.com>'
+
+
+
+
+# django文件存储
+DEFAULT_FILE_STORAGE = 'utils.fastdfs.fdfs_storage.FastDFSStorage'
+
+# FastDFS
+FDFS_URL = 'http://image.meiduo.site:8888/'
+FDFS_CLIENT_CONF = os.path.join(os.path.dirname(BASE_DIR), 'Buybuybuy/../../utils/fast_dfs/client.conf')
+
+
+
+
+# 富文本编辑器ckeditor配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',  # 工具条功能
+        'height': 300,  # 编辑器高度
+        # 'width': 300,  # 编辑器宽度
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所以此处设为''
+
+GENERATED_STATIC_HTML_PATH = os.path.join(os.path.dirname(BASE_DIR), 'front_end_pc')

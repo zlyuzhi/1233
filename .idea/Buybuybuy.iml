@@ -17,6 +17,8 @@
       <sourceFolder url="file://$MODULE_DIR$/celery_tasks" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Buybuybuy/apps" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Buybuybuy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

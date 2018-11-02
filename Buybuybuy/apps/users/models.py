@@ -3,8 +3,8 @@ from django.db import models
 
 # Create your models here.
 from users import constans
-from utils import tjws
-from utils.models import BaseModel
+import tjws
+from utils import BaseModel
 
 
 class User(AbstractUser):

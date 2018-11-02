@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -7,8 +6,8 @@ from oauth import constants
 from oauth.models import QQUser
 from oauth.qq_sdk import OAuthQQ
 from oauth.serializers import QQBindSerializer
-from utils import tjws
-from utils.jwt_token import generate
+import tjws
+from utils import generate
 
 
 class QQurlView(APIView):
