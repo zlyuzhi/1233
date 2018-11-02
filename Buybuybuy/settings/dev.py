@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'contents.apps.ContentsConfig',
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
-
+    'django_crontab',  # 定时任务'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +75,9 @@ ROOT_URLCONF = 'Buybuybuy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '../../templates')]
-        ,
+        # 'DIRS': [os.path.join(BASE_DIR, '../../templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,14 +104,11 @@ DATABASES = {
         'PASSWORD': '123456',  # 数据库用户密码
         'NAME': 'bbb',  # 数据库名字
 
-
-
-        }
     }
+}
 
-
-    # Password validation
-    # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
+# Password validation
+# https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -239,10 +237,11 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        # 分页
+        'utils.pagination.StandardResultsSetPagination',
 
     ),
 }
-
 
 # 设置缓存
 REST_FRAMEWORK_EXTENSIONS = {
@@ -251,12 +250,6 @@ REST_FRAMEWORK_EXTENSIONS = {
     # 缓存存储
     'DEFAULT_USE_CACHE': 'default',
 }
-
-
-
-
-
-
 
 AUTHENTICATION_BACKENDS = [
     'users.utils.UsernameMobileAuthBackend',
@@ -275,30 +268,25 @@ QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'  # appkey
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'  # 回调地址
 QQ_STATE = '/'  # 登录成功后返回到网站的哪个页面
 
-
 # 设置邮箱
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
-#发送邮件的邮箱
+# 发送邮件的邮箱
 EMAIL_HOST_USER = 'zl_8876@163.com'
-#在邮箱中设置的客户端授权密码
+# 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = 'yuzhi846145368'
-#收件人看到的发件人
+# 收件人看到的发件人
 EMAIL_FROM = 'zl商城<zl_8876@163.com>'
-
-
-
 
 # django文件存储
 DEFAULT_FILE_STORAGE = 'utils.fastdfs.fdfs_storage.FastDFSStorage'
 
 # FastDFS
 FDFS_URL = 'http://image.meiduo.site:8888/'
-FDFS_CLIENT_CONF = os.path.join(os.path.dirname(BASE_DIR), 'Buybuybuy/../../utils/fast_dfs/client.conf')
-
-
-
+# FDFS_CLIENT_CONF = os.path.join(os.path.dirname(BASE_DIR), 'Buybuybuy/../../utils/fast_dfs/client.conf')
+# fastdfs的配置文件
+FDFS_CLIENT_CONF = os.path.join(os.path.dirname(BASE_DIR), 'utils/fast_dfs/client.conf')
 
 # 富文本编辑器ckeditor配置
 CKEDITOR_CONFIGS = {
@@ -310,4 +298,13 @@ CKEDITOR_CONFIGS = {
 }
 CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所以此处设为''
 
-GENERATED_STATIC_HTML_PATH = os.path.join(os.path.dirname(BASE_DIR), 'front_end_pc')
+# 生成静态文件的目录
+GENERATE_STATIC_HTML_PATH = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+# 定时任务
+CRONJOBS_LOG = os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log')
+CRONJOBS = [
+    # 每5分钟执行一次生成主页静态文件
+    ('*/1 * * * *', 'contents.crons.generate_index_html', '>> ' + CRONJOBS_LOG),
+]
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'

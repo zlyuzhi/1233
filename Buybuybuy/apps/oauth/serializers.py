@@ -3,7 +3,7 @@ from rest_framework import serializers
 from oauth import constants
 from oauth.models import QQUser
 from users.models import User
-import tjws
+from utils import tjws
 
 
 class QQBindSerializer(serializers.Serializer):

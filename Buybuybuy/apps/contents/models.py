@@ -1,6 +1,8 @@
 # Create your models here.
 from django.db import models
-from utils import BaseModel
+
+from utils.models import BaseModel
+
 
 class ContentCategory(BaseModel):
     """

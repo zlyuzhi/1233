@@ -6,8 +6,9 @@ from oauth import constants
 from oauth.models import QQUser
 from oauth.qq_sdk import OAuthQQ
 from oauth.serializers import QQBindSerializer
-import tjws
-from utils import generate
+
+from utils import  tjws
+from utils.jwt_token import generate
 
 
 class QQurlView(APIView):

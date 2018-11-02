@@ -54,4 +54,4 @@ def get_goods_category():
 
             categories[channel.group_id]['sub_cats'].append(sub)
 
-        return categories
+    return categories
