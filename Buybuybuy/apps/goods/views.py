@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 from drf_haystack.viewsets import HaystackViewSet
 from rest_framework.generics import ListAPIView
 
@@ -19,14 +18,13 @@ class SKUListView(ListAPIView):
     serializer_class = SKUSerializer
 
     #分页
-
     pagination_class = SKUListPagination
     #排序
     # 1 去setting里面注册
     # 2 指定排序的类OrderingFilter
     filter_backends = [OrderingFilter]
     #3 指定按照什么循序(字段)来排
-    OrderingFilter=['create_time', 'price', 'sales']
+    ordering_fields=['create_time', 'price', 'sales']
 
 
 class SKUSearchViewSet(HaystackViewSet):
@@ -39,3 +37,4 @@ class SKUSearchViewSet(HaystackViewSet):
     serializer_class = SKUIndexSerializer
     # 分页
     pagination_class = SKUListPagination
+

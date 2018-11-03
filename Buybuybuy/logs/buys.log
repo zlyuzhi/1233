@@ -3152,3 +3152,34 @@ INFO 2018-11-03 11:38:16,872 basehttp 124 "GET /categories/115/skus/?page=1&page
 WARNING 2018-11-03 11:38:16,896 base 152 Not Found: /cart/
 WARNING 2018-11-03 11:38:16,897 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
 WARNING 2018-11-03 11:38:16,898 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+WARNING 2018-11-03 11:45:52,895 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:45:52,913 base 152 Not Found: /cart/
+WARNING 2018-11-03 11:45:52,914 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+WARNING 2018-11-03 11:45:52,918 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+INFO 2018-11-03 11:45:52,961 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-11-03 11:46:02,597 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:46:02,595 base 152 Not Found: /cart/
+INFO 2018-11-03 11:46:02,620 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-11-03 11:46:02,623 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+WARNING 2018-11-03 11:46:02,624 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+INFO 2018-11-03 11:49:56,916 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-03 11:49:56,980 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:49:56,986 base 152 Not Found: /cart/
+WARNING 2018-11-03 11:49:56,999 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+WARNING 2018-11-03 11:49:57,002 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+INFO 2018-11-03 11:49:57,030 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1253
+WARNING 2018-11-03 11:50:54,463 base 152 Not Found: /cart/
+WARNING 2018-11-03 11:50:54,476 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:50:54,483 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+WARNING 2018-11-03 11:50:54,491 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+INFO 2018-11-03 11:50:54,515 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-11-03 11:55:00,400 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:55:00,404 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+WARNING 2018-11-03 11:55:00,397 base 152 Not Found: /cart/
+WARNING 2018-11-03 11:55:00,409 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+INFO 2018-11-03 11:55:00,440 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+WARNING 2018-11-03 11:55:18,136 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 11:55:18,151 base 152 Not Found: /cart/
+WARNING 2018-11-03 11:55:18,157 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8275
+WARNING 2018-11-03 11:55:18,169 basehttp 124 "GET /cart/ HTTP/1.1" 404 8245
+INFO 2018-11-03 11:55:18,169 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
