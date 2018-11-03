@@ -56,6 +56,8 @@ INSTALLED_APPS = [
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
     'django_crontab',  # 定时任务'
+    'django_filters',# 用于排序
+    'haystack',    #搜索
 ]
 
 MIDDLEWARE = [
@@ -238,7 +240,7 @@ REST_FRAMEWORK = {
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         # 分页
-        'utils.pagination.StandardResultsSetPagination',
+        # 'utils.pagination.StandardResultsSetPagination',
 
     ),
 }
@@ -280,7 +282,7 @@ EMAIL_HOST_PASSWORD = 'yuzhi846145368'
 EMAIL_FROM = 'zl商城<zl_8876@163.com>'
 
 # django文件存储
-DEFAULT_FILE_STORAGE = 'utils.fastdfs.fdfs_storage.FastDFSStorage'
+DEFAULT_FILE_STORAGE = 'utils.fast_dfs.storage.FdfsStorage'
 
 # FastDFS
 FDFS_URL = 'http://image.meiduo.site:8888/'
@@ -301,10 +303,26 @@ CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所�
 # 生成静态文件的目录
 GENERATE_STATIC_HTML_PATH = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
 # 定时任务
-CRONJOBS_LOG = os.path.join(os.path.dirname(BASE_DIR), 'logs/crontab.log')
+CRONJOBS_LOG = os.path.join(BASE_DIR, 'logs/crontab.log')
+
 CRONJOBS = [
-    # 每5分钟执行一次生成主页静态文件
+    # 每1分钟执行一次生成主页静态文件
     ('*/1 * * * *', 'contents.crons.generate_index_html', '>> ' + CRONJOBS_LOG),
 ]
 # 解决crontab中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        # 端口号固定为9200
+        'URL': 'http://192.168.73.146:9200/',
+        # 指定elasticsearch建立的索引库的名称
+        'INDEX_NAME': 'bbb',
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

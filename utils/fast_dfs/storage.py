@@ -11,7 +11,7 @@ class FdfsStorage(Storage):
         pass
 
     def save(self, name, content, max_length=None):
-        # content:请求报文中的文件对象
+        # content:请求报文中的文件对象(二进制)
         client = Fdfs_client(settings.FDFS_CLIENT_CONF)
         ret = client.upload_by_buffer(content.read())
         if ret['Status'] != 'Upload successed.':
