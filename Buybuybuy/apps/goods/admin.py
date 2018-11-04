@@ -26,8 +26,11 @@ class SKUAdmin(admin.ModelAdmin):
     # 重写保存、删除方法
     def save_model(self, request, obj, form, change):
         # 当新增、修改对象时，这个方法会执行,检测到执行,原有动作不变,添加新的celery功能
+        print("-------------------------------------------------------------------")
+
         super().save_model(request, obj, form, change)
         # 生成静态文件
+        print('--------------------')
         generate_static_sku_detail_html.delay(obj.id)
 
     def delete_model(self, request, obj):

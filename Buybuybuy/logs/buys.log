@@ -4919,3 +4919,1983 @@ Traceback (most recent call last):
     raise ConnectionError('N/A', str(e), e)
 elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f53aeed8e10>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f53aeed8e10>: Failed to establish a new connection: [Errno 111] Connection refused)
 ERROR 2018-11-03 17:29:49,765 basehttp 124 "POST /admin/goods/sku/16/change/ HTTP/1.1" 500 303295
+INFO 2018-11-03 19:30:00,769 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-11-03 19:30:08,722 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15280
+INFO 2018-11-03 19:30:08,912 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:30:12,560 basehttp 124 "GET /admin/goods/skuimage/34/change/ HTTP/1.1" 200 6962
+INFO 2018-11-03 19:30:12,733 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:30:25,917 basehttp 124 "POST /admin/goods/skuimage/34/change/ HTTP/1.1" 302 0
+INFO 2018-11-03 19:30:26,425 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15529
+INFO 2018-11-03 19:30:26,582 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:30:44,573 basehttp 124 "GET /admin/goods/skuimage/33/change/ HTTP/1.1" 200 6963
+INFO 2018-11-03 19:30:44,715 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:30:48,142 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15280
+INFO 2018-11-03 19:30:55,703 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:30:55,785 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:31:00,043 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 19:31:00,214 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 19:31:07,733 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f13ebd931d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f13ebd931d0>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f13ebd931d0>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:31:08,271 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303432
+INFO 2018-11-03 19:31:50,669 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 19:31:50,852 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 19:31:56,035 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c540ca358>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c540ca358>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c540ca358>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:31:56,618 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303434
+INFO 2018-11-03 19:32:05,194 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+ERROR 2018-11-03 19:32:16,354 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c540e1048>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c540e1048>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c540e1048>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:32:16,834 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303434
+ERROR 2018-11-03 19:33:22,003 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c3ece8940>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ece8940>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ece8940>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:33:22,430 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303434
+INFO 2018-11-03 19:34:44,351 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:34:44,418 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:34:45,303 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:34:53,388 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:34:53,473 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:34:56,309 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-11-03 19:34:59,149 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15280
+INFO 2018-11-03 19:35:02,613 basehttp 124 "GET /admin/goods/skuimage/43/change/ HTTP/1.1" 200 6963
+INFO 2018-11-03 19:35:02,689 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:35:08,994 basehttp 124 "POST /admin/goods/skuimage/43/change/ HTTP/1.1" 302 0
+INFO 2018-11-03 19:35:09,479 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15530
+INFO 2018-11-03 19:35:09,620 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:35:15,097 basehttp 124 "GET /admin/goods/skuimage/43/change/ HTTP/1.1" 200 6963
+INFO 2018-11-03 19:35:21,787 basehttp 124 "GET /admin/goods/sku HTTP/1.1" 301 0
+INFO 2018-11-03 19:35:22,035 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:35:22,142 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:35:24,849 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 19:35:24,953 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:35:28,450 basehttp 124 "GET /admin/goods/sku/13/history/ HTTP/1.1" 200 1977
+INFO 2018-11-03 19:35:54,072 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:35:54,237 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:35:56,893 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 19:35:56,985 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 19:36:01,136 exception 135 Internal Server Error: /admin/goods/sku/12/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c3f7a9dd8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3f7a9dd8>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3f7a9dd8>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:36:01,602 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 500 303435
+ERROR 2018-11-03 19:50:31,346 exception 135 Internal Server Error: /admin/goods/sku/12/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c3ffe22e8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ffe22e8>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ffe22e8>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:50:32,306 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 500 303434
+INFO 2018-11-03 19:50:39,189 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:50:39,274 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 19:50:40,097 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 19:50:45,444 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 19:50:45,546 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 19:50:56,147 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9c3ec9fc50>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ec9fc50>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9c3ec9fc50>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 19:50:56,692 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303434
+INFO 2018-11-03 20:01:07,538 basehttp 124 "GET /admin/goods/sku/13 HTTP/1.1" 301 0
+INFO 2018-11-03 20:01:07,679 basehttp 124 "GET /admin/goods/sku/13/ HTTP/1.1" 302 0
+INFO 2018-11-03 20:01:08,207 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:01:08,464 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:01:15,541 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:01:15,599 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:01:16,317 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:01:22,842 basehttp 124 "GET /admin/goods/sku/add/ HTTP/1.1" 200 33590
+INFO 2018-11-03 20:01:22,975 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:01:26,273 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:01:27,969 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:01:34,675 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:01:38,802 basehttp 124 "GET /admin/ HTTP/1.1" 200 9851
+INFO 2018-11-03 20:01:41,319 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15280
+INFO 2018-11-03 20:01:41,473 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:01:43,381 basehttp 124 "GET /admin/goods/skuimage/add/ HTTP/1.1" 200 6479
+INFO 2018-11-03 20:01:43,565 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:01:51,221 basehttp 124 "POST /admin/goods/skuimage/add/ HTTP/1.1" 302 0
+INFO 2018-11-03 20:01:51,838 basehttp 124 "GET /admin/goods/skuimage/ HTTP/1.1" 200 15757
+INFO 2018-11-03 20:01:51,989 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:02:10,388 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:02:10,511 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 20:02:14,164 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:02:14,258 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:02:22,718 exception 135 Internal Server Error: /admin/goods/sku/13/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f47c8776048>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f47c8776048>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f47c8776048>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:02:23,178 basehttp 124 "POST /admin/goods/sku/13/change/ HTTP/1.1" 500 303434
+INFO 2018-11-03 20:02:40,570 basehttp 124 "GET /admin/goods/sku/13/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:02:42,413 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:08:07,275 basehttp 124 "GET /admin/goods/sku/8/change/ HTTP/1.1" 200 34158
+INFO 2018-11-03 20:08:07,448 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:08:12,824 exception 135 Internal Server Error: /admin/goods/sku/8/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7ff07f553160>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7ff07f553160>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7ff07f553160>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:08:13,239 basehttp 124 "POST /admin/goods/sku/8/change/ HTTP/1.1" 500 302082
+ERROR 2018-11-03 20:08:40,592 exception 135 Internal Server Error: /admin/goods/sku/8/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f4690072c18>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f4690072c18>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f4690072c18>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:08:41,324 basehttp 124 "POST /admin/goods/sku/8/change/ HTTP/1.1" 500 302056
+INFO 2018-11-03 20:08:46,974 basehttp 124 "GET /admin/goods/sku/8/change/ HTTP/1.1" 200 34158
+ERROR 2018-11-03 20:08:49,154 exception 135 Internal Server Error: /admin/goods/sku/8/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f468b55cb38>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 29, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f468b55cb38>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f468b55cb38>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:08:50,009 basehttp 124 "POST /admin/goods/sku/8/change/ HTTP/1.1" 500 302054
+INFO 2018-11-03 20:14:41,789 basehttp 124 "GET /admin/goods/sku/8/change/ HTTP/1.1" 200 34158
+INFO 2018-11-03 20:16:56,224 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:17:07,080 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:17:07,469 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:20:39,705 exception 135 Internal Server Error: /admin/goods/sku/12/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f753855cef0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f753855cef0>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f753855cef0>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:21:33,726 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 500 305037
+INFO 2018-11-03 20:23:01,067 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+ERROR 2018-11-03 20:23:03,919 exception 135 Internal Server Error: /admin/goods/sku/12/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f87fbefab00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f87fbefab00>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f87fbefab00>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:23:04,399 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 500 303395
+INFO 2018-11-03 20:24:23,112 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+ERROR 2018-11-03 20:24:25,222 exception 135 Internal Server Error: /admin/goods/sku/12/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9425d869e8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9425d869e8>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f9425d869e8>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:24:25,889 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 500 303395
+INFO 2018-11-03 20:24:28,982 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+INFO 2018-11-03 20:25:22,419 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-03 20:25:26,376 basehttp 124 "GET /admin/goods/sku/14/change/ HTTP/1.1" 200 34196
+INFO 2018-11-03 20:25:26,613 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:25:31,956 exception 135 Internal Server Error: /admin/goods/sku/14/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f37242956d8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f37242956d8>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f37242956d8>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2018-11-03 20:25:34,338 basehttp 124 "POST /admin/goods/sku/14/change/ HTTP/1.1" 500 305070
+INFO 2018-11-03 20:26:53,364 basehttp 124 "GET /admin/goods/sku/14 HTTP/1.1" 301 0
+INFO 2018-11-03 20:26:53,739 basehttp 124 "GET /admin/goods/sku/14/ HTTP/1.1" 302 0
+INFO 2018-11-03 20:26:55,289 basehttp 124 "GET /admin/goods/sku/14/change/ HTTP/1.1" 200 34196
+INFO 2018-11-03 20:26:55,660 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:27:34,964 exception 135 Internal Server Error: /admin/goods/sku/14/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fc026eff518>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fc026eff518>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fc026eff518>: Failed to establish a new connection: [Errno 111] Connection refused)
+INFO 2018-11-03 20:29:22,836 basehttp 124 "GET /admin/goods/sku/14/ HTTP/1.1" 302 0
+INFO 2018-11-03 20:29:24,423 basehttp 124 "GET /admin/goods/sku/14/change/ HTTP/1.1" 200 34196
+INFO 2018-11-03 20:29:24,657 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2018-11-03 20:32:32,909 exception 135 Internal Server Error: /admin/goods/sku/14/change/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 171, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 79, in create_connection
+    raise err
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/connection.py", line 69, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/util/retry.py", line 343, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 196, in connect
+    conn = self._new_conn()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/urllib3/connection.py", line 180, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbc63fe9be0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/goods/admin.py", line 31, in save_model
+    super().save_model(request, obj, form, change)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/db/models/base.py", line 846, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fbc63fe9be0>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fbc63fe9be0>: Failed to establish a new connection: [Errno 111] Connection refused)
+INFO 2018-11-03 20:36:27,777 basehttp 124 "GET /admin/goods/sku/14/change/ HTTP/1.1" 200 34196
+INFO 2018-11-03 20:37:10,873 basehttp 124 "POST /admin/goods/sku/14/change/ HTTP/1.1" 302 0
+INFO 2018-11-03 20:37:11,253 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9693
+INFO 2018-11-03 20:37:11,391 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-03 22:02:35,377 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-03 22:02:35,576 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 22:02:35,604 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-03 22:02:35,612 base 152 Not Found: /cart/
+WARNING 2018-11-03 22:02:35,616 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-03 22:02:35,662 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-03 22:10:54,647 basehttp 124 "GET /admin/goods/sku/14/change/ HTTP/1.1" 200 34196
+INFO 2018-11-03 22:36:37,714 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-03 22:36:37,869 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 22:36:37,887 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-03 22:36:37,890 base 152 Not Found: /cart/
+WARNING 2018-11-03 22:36:37,900 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-03 22:36:37,939 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-03 22:36:50,969 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-03 22:36:50,984 basehttp 124 "GET /categories/116/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+WARNING 2018-11-03 22:36:51,014 base 152 Not Found: /categories/116/
+WARNING 2018-11-03 22:36:51,028 basehttp 124 "GET /categories/116/ HTTP/1.1" 404 8442
+WARNING 2018-11-03 22:36:51,060 base 152 Not Found: /cart/
+WARNING 2018-11-03 22:36:51,063 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+WARNING 2018-11-03 22:37:04,787 base 152 Not Found: /categories/116/
+WARNING 2018-11-03 22:37:04,799 basehttp 124 "GET /categories/116/ HTTP/1.1" 404 8442
+WARNING 2018-11-03 22:37:04,817 base 152 Not Found: /cart/
+INFO 2018-11-03 22:37:04,819 basehttp 124 "GET /categories/116/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 52
+WARNING 2018-11-03 22:37:04,821 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+WARNING 2018-11-03 22:37:15,855 base 152 Not Found: /categories/115/
+WARNING 2018-11-03 22:37:15,892 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+INFO 2018-11-03 22:37:15,900 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-03 22:37:15,925 base 152 Not Found: /cart/
+WARNING 2018-11-03 22:37:15,930 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-03 22:37:17,963 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-03 22:37:18,237 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-03 22:37:42,641 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+WARNING 2018-11-03 22:38:08,098 base 152 Not Found: /cart/
+WARNING 2018-11-03 22:38:08,103 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-03 22:38:12,169 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-03 22:38:12,410 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-03 22:38:12,533 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 238
+INFO 2018-11-04 09:02:08,107 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:02:08,322 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+WARNING 2018-11-04 09:02:08,900 base 152 Not Found: /favicon.ico
+WARNING 2018-11-04 09:02:08,902 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8430
+INFO 2018-11-04 09:02:19,688 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:02:19,796 basehttp 124 "GET /admin/ HTTP/1.1" 200 10550
+INFO 2018-11-04 09:02:27,900 basehttp 124 "GET /admin/goods/brand/add/ HTTP/1.1" 200 4785
+INFO 2018-11-04 09:02:28,073 basehttp 124 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,074 basehttp 124 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,081 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:02:28,079 basehttp 124 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,087 basehttp 124 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,122 basehttp 124 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,124 basehttp 124 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,129 basehttp 124 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,166 basehttp 124 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,199 basehttp 124 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,202 basehttp 124 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,229 basehttp 124 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:28,230 basehttp 124 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:30,559 basehttp 124 "GET /admin/ HTTP/1.1" 200 10550
+INFO 2018-11-04 09:02:37,092 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-04 09:02:37,126 basehttp 124 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:37,141 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:02:38,445 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-04 09:02:38,611 basehttp 124 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2018-11-04 09:02:45,973 basehttp 124 "GET /admin/goods/sku/?o=1 HTTP/1.1" 200 10095
+INFO 2018-11-04 09:02:46,042 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:02:46,195 basehttp 124 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2018-11-04 09:03:08,225 basehttp 124 "GET /admin/goods/sku/add/?_changelist_filters=o%3D1 HTTP/1.1" 200 33616
+INFO 2018-11-04 09:03:08,309 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:11,651 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-04 09:03:11,765 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:17,551 basehttp 124 "GET /admin/goods/sku/16/change/ HTTP/1.1" 200 34200
+INFO 2018-11-04 09:03:17,644 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:22,996 basehttp 124 "POST /admin/goods/sku/16/change/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:03:23,378 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9693
+INFO 2018-11-04 09:03:23,533 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:23,680 basehttp 124 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2018-11-04 09:03:26,804 basehttp 124 "GET /admin/goods/sku/12/change/ HTTP/1.1" 200 34194
+INFO 2018-11-04 09:03:26,934 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:35,850 basehttp 124 "POST /admin/goods/sku/12/change/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:03:36,148 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9692
+INFO 2018-11-04 09:03:36,315 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:03:44,001 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-11-04 09:03:48,107 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 84043
+INFO 2018-11-04 09:03:48,232 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682

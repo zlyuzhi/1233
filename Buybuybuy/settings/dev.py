@@ -167,7 +167,21 @@ CACHES = {
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
-    }
+    },
+
+    "history": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/3",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+
+
+
+
+
+
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -283,6 +297,7 @@ EMAIL_FROM = 'zl商城<zl_8876@163.com>'
 
 # django文件存储
 DEFAULT_FILE_STORAGE = 'utils.fast_dfs.storage.FdfsStorage'
+
 
 # FastDFS
 FDFS_URL = 'http://image.meiduo.site:8888/'

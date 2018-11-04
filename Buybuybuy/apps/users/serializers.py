@@ -4,6 +4,7 @@ from django_redis import get_redis_connection
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 
+from goods.models import SKU
 from users import constans
 from users.models import User, Address
 from celery_tasks.email.tasks import send_verify_mail
@@ -149,3 +150,31 @@ class AddressSerializer(serializers.ModelSerializer):
         model = Address
         # 拍粗不必要的字段,用户不需要传递,设为当前用户
         exclude = ['is_delete', 'create_time', 'update_time', 'user']
+
+
+class BrowseHistorySerializer(serializers.Serializer):
+    sku_id = serializers.IntegerField(min_value=1)
+
+    def validate_sku_id(self, value):
+        # 查询商品编号是否存在
+        count = SKU.objects.filter(pk=value).count()
+        if count <= 0:
+            raise serializers.ValidationError('商品编号无效')
+        return value
+
+    def create(self, validated_data):
+        sku_id = validated_data['sku_id']
+        # 连接redis
+        redis_cli = get_redis_connection('history')
+        # 根据不同的用户构造键
+        key = 'history_%d' % self.context['request'].user.id
+        # 1.删除sku_id
+        redis_cli.lrem(key, 0, sku_id)
+        # 2.添加
+        redis_cli.lpush(key, sku_id)
+        # 3.判断长度
+        if redis_cli.llen(key) > constans.BROWSE_HISTORY_LIMT:
+            # 4.如果超过长度则删除最后一个
+            redis_cli.rpop(key)
+
+        return {'sku_id': sku_id}
