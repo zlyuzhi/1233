@@ -6899,3 +6899,1977 @@ INFO 2018-11-04 09:03:36,315 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
 INFO 2018-11-04 09:03:44,001 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
 INFO 2018-11-04 09:03:48,107 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 84043
 INFO 2018-11-04 09:03:48,232 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:05:26,494 basehttp 124 "GET /admin/goods/goods/sku HTTP/1.1" 301 0
+INFO 2018-11-04 09:05:26,530 basehttp 124 "GET /admin/goods/goods/sku/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:05:26,558 basehttp 124 "GET /admin/goods/goods/sku/change/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:05:26,653 basehttp 124 "GET /admin/ HTTP/1.1" 200 11133
+INFO 2018-11-04 09:05:27,026 basehttp 124 "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+WARNING 2018-11-04 09:05:39,098 base 152 Not Found: /admin/sku/
+WARNING 2018-11-04 09:05:39,101 basehttp 124 "GET /admin/sku/ HTTP/1.1" 404 11947
+INFO 2018-11-04 09:05:52,209 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-11-04 09:05:53,137 basehttp 124 "GET /admin/goods/ HTTP/1.1" 200 5583
+INFO 2018-11-04 09:06:01,688 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9447
+INFO 2018-11-04 09:06:01,804 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:06:22,409 basehttp 124 "GET /admin/goods/sku/1/change/ HTTP/1.1" 200 34183
+INFO 2018-11-04 09:06:22,575 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 09:06:28,753 basehttp 124 "POST /admin/goods/sku/1/change/ HTTP/1.1" 302 0
+INFO 2018-11-04 09:06:29,055 basehttp 124 "GET /admin/goods/sku/ HTTP/1.1" 200 9653
+INFO 2018-11-04 09:06:29,150 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2018-11-04 11:04:41,845 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-04 11:04:41,910 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 11:04:41,914 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-04 11:04:41,985 base 152 Not Found: /cart/
+WARNING 2018-11-04 11:04:42,002 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-04 11:04:42,015 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-04 11:04:43,869 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 11:04:44,117 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-04 11:04:48,204 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-04 11:04:51,235 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-04 11:04:54,671 basehttp 124 "GET /categories/115/skus/?page=3&page_size=5&ordering=-create_time HTTP/1.1" 200 806
+INFO 2018-11-04 11:04:56,156 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-04 11:05:00,081 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2018-11-04 11:05:04,188 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 11:05:04,204 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-04 11:05:04,232 base 152 Not Found: /cart/
+WARNING 2018-11-04 11:05:04,243 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-04 11:05:04,272 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-04 11:05:05,389 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-04 11:05:08,456 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-04 11:05:13,495 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-04 11:05:15,449 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 12
+INFO 2018-11-04 11:05:18,119 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-04 11:05:19,498 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2018-11-04 11:05:25,411 base 152 Not Found: /cart/
+WARNING 2018-11-04 11:05:25,413 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-04 11:05:26,183 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 11:05:26,480 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 11:05:26,563 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 11:06:03,711 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 11:06:03,823 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 11:07:03,334 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 11:07:03,471 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+WARNING 2018-11-04 11:08:03,978 basehttp 124 "GET /user/ HTTP/1.1" 401 35
+WARNING 2018-11-04 20:54:00,801 basehttp 124 "GET /browse_histories/ HTTP/1.1" 401 35
+INFO 2018-11-04 20:54:25,521 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+WARNING 2018-11-04 20:55:39,988 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 20:55:39,989 basehttp 124 "GET //browse_histories/ HTTP/1.1" 404 8451
+WARNING 2018-11-04 20:56:25,680 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 20:56:25,686 basehttp 124 "GET //browse_histories/ HTTP/1.1" 404 8451
+WARNING 2018-11-04 20:56:29,656 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 20:56:29,661 basehttp 124 "GET //browse_histories/ HTTP/1.1" 404 8451
+WARNING 2018-11-04 20:56:44,310 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 20:56:44,313 basehttp 124 "GET //browse_histories/ HTTP/1.1" 404 8451
+INFO 2018-11-04 20:57:22,990 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-04 20:57:23,049 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-04 20:57:23,659 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 20:57:24,042 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 20:57:24,063 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 20:57:24,127 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 20:58:06,482 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 20:58:06,939 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 20:58:11,657 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 20:58:11,925 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 20:58:11,957 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 20:58:12,233 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 20:59:05,338 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 20:59:05,653 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 20:59:20,189 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-04 21:00:05,107 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:00:05,228 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+WARNING 2018-11-04 21:00:27,871 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 21:00:27,875 basehttp 124 "POST //browse_histories/ HTTP/1.1" 404 8452
+WARNING 2018-11-04 21:00:46,960 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 21:00:46,963 basehttp 124 "POST //browse_histories/ HTTP/1.1" 404 8452
+INFO 2018-11-04 21:01:04,893 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:01:05,044 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+WARNING 2018-11-04 21:02:00,899 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 21:02:00,900 basehttp 124 "POST //browse_histories/ HTTP/1.1" 404 8452
+INFO 2018-11-04 21:02:03,983 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:02:04,200 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+WARNING 2018-11-04 21:02:13,337 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 21:02:13,338 basehttp 124 "POST //browse_histories/ HTTP/1.1" 404 8452
+WARNING 2018-11-04 21:02:25,351 base 152 Not Found: //browse_histories/
+WARNING 2018-11-04 21:02:25,355 basehttp 124 "GET //browse_histories/ HTTP/1.1" 404 8451
+INFO 2018-11-04 21:02:44,518 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:03:04,838 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:03:05,132 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:04:03,993 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:04:04,166 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:05:04,561 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:05:04,796 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:06:06,028 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:06:06,503 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:07:03,675 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:07:03,813 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:10:04,489 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:10:04,693 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:10:04,741 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:10:04,818 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:12:03,686 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:12:03,802 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:13:03,572 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:13:03,854 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:14:03,289 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:14:03,503 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:15:04,484 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:15:04,700 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:16:04,832 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:16:04,976 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:17:04,584 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:17:04,793 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:18:03,401 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:18:03,553 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:19:04,891 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:19:05,111 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:20:03,679 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:20:03,822 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:21:05,023 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:21:05,187 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:21:05,255 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:21:05,379 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:22:04,222 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:22:04,371 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:23:04,751 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:23:04,928 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:24:04,780 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:24:05,028 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:25:04,010 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:25:04,164 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:26:03,605 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:26:03,821 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:27:03,670 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:27:03,860 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:28:04,482 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:28:04,622 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:29:05,475 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:29:05,716 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:30:03,816 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:30:04,349 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:31:04,096 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:31:04,208 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:32:03,736 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:32:03,879 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:32:03,956 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:32:04,013 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:33:05,174 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:33:05,359 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:34:03,907 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:34:04,213 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:36:04,691 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:37:05,017 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:37:05,255 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:38:04,601 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:38:04,759 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:39:05,947 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:40:04,578 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:40:04,769 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:41:03,482 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:41:03,681 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:42:04,521 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:42:04,703 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:42:04,834 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:42:04,948 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:43:04,318 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:43:04,537 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:44:04,674 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:44:04,781 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:45:04,643 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:45:04,760 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:46:03,804 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:46:03,992 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:47:03,262 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:47:03,454 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:48:04,611 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:48:04,800 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:49:04,434 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:49:04,664 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:50:04,211 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:50:04,383 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:51:04,501 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:51:04,631 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:54:04,642 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:54:04,719 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:54:04,760 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 21:54:04,857 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:55:04,438 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:55:04,567 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:56:04,216 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:56:04,379 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:57:03,839 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:57:04,047 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:58:03,931 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:58:04,050 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 21:59:03,572 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 21:59:03,910 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:02:04,471 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:02:04,566 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:03:04,657 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:03:04,790 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:05:04,680 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:05:04,850 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:05:04,892 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:05:04,987 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:18:03,738 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:18:03,789 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:18:03,833 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:18:03,938 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:19:03,747 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:19:03,834 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:20:03,568 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:20:03,775 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:21:03,699 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:21:03,789 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:22:03,422 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:22:03,610 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:23:04,320 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:23:04,447 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:26:16,770 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:26:16,827 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-04 22:26:44,817 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:26:44,890 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-04 22:26:44,915 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 22:26:44,934 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-04 22:26:44,940 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:26:44,941 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+WARNING 2018-11-04 22:27:03,811 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:27:03,835 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+WARNING 2018-11-04 22:27:03,890 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 22:27:03,890 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+INFO 2018-11-04 22:27:03,903 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-04 22:27:28,095 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 22:27:28,096 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8442
+WARNING 2018-11-04 22:27:28,184 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:27:28,185 basehttp 124 "GET /cart/ HTTP/1.1" 404 8412
+INFO 2018-11-04 22:27:28,187 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-04 22:48:22,100 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:48:22,274 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-04 22:48:22,320 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-04 22:48:22,351 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 1150
+INFO 2018-11-04 22:48:27,434 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-04 22:48:32,454 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-04 22:48:32,468 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:48:32,469 basehttp 124 "POST /cart/ HTTP/1.1" 404 8413
+WARNING 2018-11-04 22:48:33,910 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:48:33,913 basehttp 124 "POST /cart/ HTTP/1.1" 404 8413
+WARNING 2018-11-04 22:48:44,536 base 152 Not Found: /cart/
+WARNING 2018-11-04 22:48:44,538 basehttp 124 "POST /cart/ HTTP/1.1" 404 8413
+INFO 2018-11-04 22:49:05,011 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-04 22:50:04,728 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-04 22:50:39,777 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-04 22:50:39,912 basehttp 124 "POST /cart/ HTTP/1.1" 500 89851
+ERROR 2018-11-04 22:50:57,318 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-04 22:50:57,432 basehttp 124 "POST /cart/ HTTP/1.1" 500 89851
+INFO 2018-11-04 22:51:05,514 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2018-11-04 22:52:15,809 base 152 Not Found: /categories/115/
+WARNING 2018-11-04 22:52:15,811 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+INFO 2018-11-04 22:52:15,836 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-04 22:52:15,858 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+ERROR 2018-11-04 22:52:31,480 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-04 22:52:31,586 basehttp 124 "POST /cart/ HTTP/1.1" 500 89670
+INFO 2018-11-04 22:53:20,763 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+WARNING 2018-11-04 22:53:47,722 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-04 22:54:04,134 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+INFO 2018-11-04 22:54:16,607 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+WARNING 2018-11-04 22:54:31,513 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-04 22:55:04,460 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-04 22:56:04,496 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-04 22:57:03,465 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-04 22:57:12,705 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+INFO 2018-11-04 22:57:21,867 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+WARNING 2018-11-04 22:58:44,732 basehttp 124 "POST /cart/ HTTP/1.1" 400 76
+WARNING 2018-11-04 22:59:29,723 basehttp 124 "POST /cart/ HTTP/1.1" 400 76
+INFO 2018-11-04 23:00:04,242 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 10:25:53,226 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 10:25:53,270 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 10:25:53,272 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+ERROR 2018-11-05 10:25:53,279 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+INFO 2018-11-05 10:25:53,337 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+ERROR 2018-11-05 10:25:53,502 basehttp 124 "GET /cart/ HTTP/1.1" 500 20073
+ERROR 2018-11-05 10:26:05,198 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+INFO 2018-11-05 10:26:05,255 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-05 10:26:05,296 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 10:26:05,307 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+ERROR 2018-11-05 10:26:05,336 basehttp 124 "GET /cart/ HTTP/1.1" 500 20073
+INFO 2018-11-05 10:26:20,212 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 10:26:29,007 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:26:29,041 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:26:31,992 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:26:32,036 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:26:33,200 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:26:33,274 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:26:34,192 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:26:34,267 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:26:35,250 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:26:35,373 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:27:04,644 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:27:04,686 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:28:04,108 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:28:04,172 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:29:04,070 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 17, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:29:04,120 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:31:04,359 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = mystr.encode(mystr)
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:31:04,414 basehttp 124 "GET /cart/ HTTP/1.1" 500 20070
+ERROR 2018-11-05 10:31:41,729 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = mystr.encode(mystr)
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:31:41,762 basehttp 124 "GET /cart/ HTTP/1.1" 500 20070
+ERROR 2018-11-05 10:31:44,844 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = mystr.encode(mystr)
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:31:44,907 basehttp 124 "GET /cart/ HTTP/1.1" 500 20070
+ERROR 2018-11-05 10:32:02,852 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = mystr.encode(mystr)
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:32:02,935 basehttp 124 "GET /cart/ HTTP/1.1" 500 20070
+INFO 2018-11-05 10:33:11,956 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 10:33:16,737 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = pickle.loads(mystr)
+TypeError: a bytes-like object is required, not 'NoneType'
+ERROR 2018-11-05 10:33:16,923 basehttp 124 "GET /cart/ HTTP/1.1" 500 20068
+ERROR 2018-11-05 10:34:03,810 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 18, in loads
+    bytes_64 = pickle.loads(mystr)
+TypeError: a bytes-like object is required, not 'NoneType'
+ERROR 2018-11-05 10:34:03,924 basehttp 124 "GET /cart/ HTTP/1.1" 500 20068
+ERROR 2018-11-05 10:34:35,086 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:34:35,175 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:35:03,449 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:35:03,484 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+INFO 2018-11-05 10:36:03,166 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 10:36:03,219 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:36:03,268 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:37:03,813 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 97, in get
+    cart_dict = self.read_cookie(request)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 26, in read_cookie
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:37:03,848 basehttp 124 "GET /cart/ HTTP/1.1" 500 20065
+ERROR 2018-11-05 10:38:03,877 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:38:03,987 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:38:05,750 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:38:05,812 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:39:03,821 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 19, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:39:03,905 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:39:25,809 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:39:25,910 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:40:03,515 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:40:03,571 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:41:03,676 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:41:03,706 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:42:03,502 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 104, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:42:03,541 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+INFO 2018-11-05 10:42:23,448 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 10:46:17,973 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 10:46:17,995 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 10:46:33,149 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 107, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 31, in loads
+    return pickle.loads(bytes_hex)
+EOFError: Ran out of input
+ERROR 2018-11-05 10:46:33,417 basehttp 124 "GET /cart/ HTTP/1.1" 500 19857
+ERROR 2018-11-05 10:46:35,643 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 107, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 31, in loads
+    return pickle.loads(bytes_hex)
+EOFError: Ran out of input
+ERROR 2018-11-05 10:46:35,726 basehttp 124 "GET /cart/ HTTP/1.1" 500 19857
+ERROR 2018-11-05 10:47:03,560 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 107, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 31, in loads
+    return pickle.loads(bytes_hex)
+EOFError: Ran out of input
+ERROR 2018-11-05 10:47:03,634 basehttp 124 "GET /cart/ HTTP/1.1" 500 19857
+ERROR 2018-11-05 10:48:03,186 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:48:03,269 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:49:03,837 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:49:03,974 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:50:03,303 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:50:03,346 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:51:02,901 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:51:02,969 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:52:03,892 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:52:03,935 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:53:03,666 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:53:03,729 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:54:03,444 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:54:03,513 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:55:03,730 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:55:03,810 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:56:03,451 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:56:03,511 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+INFO 2018-11-05 10:57:03,060 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 10:57:03,107 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:57:03,136 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:57:27,564 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:57:27,661 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:58:03,913 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:58:03,971 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 10:59:03,551 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 105, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 10:59:03,588 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 11:00:03,186 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 109, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 11:00:03,303 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+ERROR 2018-11-05 11:01:03,690 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 111, in get
+    cart_dict = myjson.loads(cart_str)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/utils/myjson.py", line 27, in loads
+    bytes_64 = mystr.encode()
+AttributeError: 'NoneType' object has no attribute 'encode'
+ERROR 2018-11-05 11:01:03,748 basehttp 124 "GET /cart/ HTTP/1.1" 500 19918
+INFO 2018-11-05 11:01:30,699 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 11:01:39,599 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:01:39,754 basehttp 124 "GET /cart/ HTTP/1.1" 500 19933
+ERROR 2018-11-05 11:02:03,342 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:02:03,406 basehttp 124 "GET /cart/ HTTP/1.1" 500 19933
+ERROR 2018-11-05 11:03:04,279 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:03:04,441 basehttp 124 "GET /cart/ HTTP/1.1" 500 19933
+ERROR 2018-11-05 11:04:04,799 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:04:04,861 basehttp 124 "GET /cart/ HTTP/1.1" 500 19933
+ERROR 2018-11-05 11:04:12,883 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:04:13,034 basehttp 124 "GET /cart/ HTTP/1.1" 500 19933
+WARNING 2018-11-05 11:04:26,635 base 152 Not Found: /categories/115/
+ERROR 2018-11-05 11:04:26,664 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+WARNING 2018-11-05 11:04:26,666 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 11:04:26,751 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+ERROR 2018-11-05 11:04:26,865 basehttp 124 "GET /cart/ HTTP/1.1" 500 19941
+INFO 2018-11-05 11:04:33,072 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 11:04:53,003 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:04:53,189 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+ERROR 2018-11-05 11:05:04,186 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:05:04,271 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+ERROR 2018-11-05 11:06:04,281 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:06:04,379 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+INFO 2018-11-05 11:07:04,319 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 11:07:04,407 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:07:04,492 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+ERROR 2018-11-05 11:08:04,270 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:08:04,340 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+ERROR 2018-11-05 11:09:07,697 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 164, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:09:07,826 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+INFO 2018-11-05 11:11:09,586 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 11:11:09,611 base 152 Not Found: /categories/115/
+ERROR 2018-11-05 11:11:09,614 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 163, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+WARNING 2018-11-05 11:11:09,624 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 11:11:09,673 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+ERROR 2018-11-05 11:11:09,807 basehttp 124 "GET /cart/ HTTP/1.1" 500 20045
+INFO 2018-11-05 11:11:36,240 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 11:11:44,887 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 163, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:11:45,040 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+INFO 2018-11-05 11:14:25,203 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:14:39,828 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 11:15:03,712 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 11:16:32,207 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:16:38,011 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+WARNING 2018-11-05 11:16:42,686 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-05 11:16:46,817 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-05 11:16:54,233 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+WARNING 2018-11-05 11:16:58,698 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+INFO 2018-11-05 11:17:03,081 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+WARNING 2018-11-05 11:17:05,996 basehttp 124 "PUT /cart/ HTTP/1.1" 405 45
+INFO 2018-11-05 11:18:03,843 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+ERROR 2018-11-05 11:18:40,070 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 109, in get
+    for key,value in cart_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2018-11-05 11:18:40,143 basehttp 124 "GET /cart/ HTTP/1.1" 500 20037
+INFO 2018-11-05 11:19:03,807 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+ERROR 2018-11-05 11:19:38,548 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 81, in post
+    redis_cli = get_redis_connection('cart_dict')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'cart_dict' in settings.CACHES
+ERROR 2018-11-05 11:19:38,608 basehttp 124 "POST /cart/ HTTP/1.1" 500 19822
+ERROR 2018-11-05 11:19:54,194 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 119, in get
+    key ='cart_%d'% request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 11:19:54,224 basehttp 124 "GET /cart/ HTTP/1.1" 500 19259
+INFO 2018-11-05 11:20:03,625 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 11:20:51,668 basehttp 124 "GET /cart/ HTTP/1.1" 200 501
+INFO 2018-11-05 11:21:10,671 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-05 11:21:12,976 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=price HTTP/1.1" 200 1313
+INFO 2018-11-05 11:21:16,338 basehttp 124 "GET /categories/115/skus/?page=3&page_size=5&ordering=price HTTP/1.1" 200 801
+INFO 2018-11-05 11:21:20,681 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 11:21:20,700 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 11:21:27,568 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:22:03,680 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 119, in get
+    key ='cart_%d'% request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 11:22:03,847 basehttp 124 "GET /cart/ HTTP/1.1" 500 19259
+INFO 2018-11-05 11:22:04,444 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:23:03,366 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+WARNING 2018-11-05 11:23:41,347 base 152 Not Found: /cart/6/
+WARNING 2018-11-05 11:23:41,348 basehttp 124 "GET /cart/6/ HTTP/1.1" 404 8573
+WARNING 2018-11-05 11:24:18,378 base 152 Not Found: /cart/6/
+WARNING 2018-11-05 11:24:18,381 basehttp 124 "GET /cart/6/ HTTP/1.1" 404 8573
+INFO 2018-11-05 11:24:40,998 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:24:55,216 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 119, in get
+    key ='cart_%d'% request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 11:24:55,271 basehttp 124 "GET /cart/ HTTP/1.1" 500 19259
+INFO 2018-11-05 11:25:03,670 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:25:56,841 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 119, in get
+    key ='cart_%d'% request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 11:25:56,877 basehttp 124 "GET /cart/ HTTP/1.1" 500 19259
+INFO 2018-11-05 11:26:03,276 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:26:53,260 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 118, in get
+    key = 'cart_%d' % request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 11:26:53,323 basehttp 124 "GET /cart/ HTTP/1.1" 500 19261
+INFO 2018-11-05 11:27:03,560 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:29:24,966 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:31:03,765 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:32:03,360 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 11:32:03,464 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
