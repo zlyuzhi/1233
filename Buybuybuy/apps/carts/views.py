@@ -26,6 +26,16 @@ class CartView(APIView):
         cart_dict = myjson.loads(cart_str)
         return cart_dict
 
+    def mykey(self,request):
+        key = 'cart_%d' % request.user.id
+        key_select = 'cart_selected_%d' % request.user.id
+        return {'key':key,'key_select':key_select}
+
+
+
+
+
+
     def perform_authentication(self, request):
         # 在执行视图函数前,不进行身份检查
         pass
@@ -78,24 +88,21 @@ class CartView(APIView):
         else:
             # 如果已经登录,存入redis
             # 连接redis
-            redis_cli = get_redis_connection('cart_dict')
+            redis_cli = get_redis_connection('cart')
             # 构造键，因为服务器会存多个用户的购物车信息，通过用户编号可以区分
             key = 'cart_%d' % request.user.id
             key_select = 'cart_selected_%d' % request.user.id
 
             redis_cli.hset(key, sku_id, count)
-            redis_cli.set(key_select, sku_id)
+            redis_cli.sadd(key_select, sku_id)
 
         return response
 
     # 展示购物车
     def get(self, request):
         user = self.user(request)
-        # try:
-        #     user = request.user
-        # except:
-        #     user = None
-        # return user
+
+
 
         if user is None:
             # 未登录,读取cookie
@@ -121,7 +128,7 @@ class CartView(APIView):
             sku_ids = redis_cli.hkeys(key)
             # 读取选中的商品编号
             sku_ids_selected = redis_cli.smembers(key_select)
-            sku_ids_selected = [int(sku_ids) for sku_ids in sku_ids_selected]
+            sku_ids_selected = [int(sku_id) for sku_id in sku_ids_selected]
 
             # 查询商品
             skus = SKU.objects.filter(pk__in=sku_ids)
@@ -135,8 +142,73 @@ class CartView(APIView):
         serializer = serializers.CartSerializer(skus, many=True)
         return Response(serializer.data)
 
-    def put(self,request):
+    def put(self, request):
+        user = self.user(request)
+        # 接受数据并验证数据
+        serializer = serializers.CartAddSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        # 验证通过后修改数据
+        sku_id = serializer.validated_data['sku_id']
+        count = serializer.validated_data['count']
+        selected = serializer.validated_data['selected']
+
+        response = Response(serializer.validated_data)
+
+        if user is None:
+            # 读取cookie里面的值
+            cart_str = request.COOKIES.get('cart')
+            cart_dict = myjson.loads(cart_str)
+            # 修改
+            cart_dict[sku_id] = {
+                'count': count,
+                'selected': selected
+            }
+            # 3 保存
+            cart_str = myjson.dumps(cart_dict)
+            response.set_cookie('cart', cart_str, max_age=contants.CART_COOKIE_EXPIRES)
+        else:
+            #  已登录
+            # 连接redis
+            redis_cli = get_redis_connection('cart')
+            # 构造键，因为服务器会存多个用户的购物车信息，通过用户编号可以区分
+            key = 'cart_%d' % request.user.id
+            key_select = 'cart_selected_%d' % request.user.id
+            # 修改数量
+            redis_cli.hset(key, sku_id, count)
+            # 修改选中
+            if selected:
+                redis_cli.sadd(key_select, sku_id)
+            else:
+                redis_cli.srem(key_select, sku_id)
+
+        return response
+
+# 删除购物车数据
+    def delete(self,request):
         user =self.user(request)
-        #接受数据并验证数据
-        # serializer = serializers.CartAddSerializer
+        serializer=serializers.CartDeleteserializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        sku_id = serializer.validated_data['sku_id']
+        response=Response(status=204)
+        if user is None:
+            '''需要从cookies中拿出删除,再写进去'''
+            #读cookie
+            cart_str =request.COOKIES.get('cart')
+            cart_dict=myjson.loads(cart_str)
+            #改cookie
+            if sku_id in cart_dict:
+                del cart_dict[sku_id]
+            #写cookie
+            cart_str =myjson.dumps(cart_dict)
+            response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+        else:
+            '''每一中存储的就有一种删除方法'''
+            redis_cli=get_redis_connection('cart')
+            key_dict = self.mykey(request)
+            key=key_dict['key']
+            key_select =key_dict.get('key_select')
+            redis_cli.hdel(key,sku_id)
+            redis_cli.srem(key_select,sku_id)
+        return response
+
 

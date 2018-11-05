@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="998d93c3-c20c-44f9-8e8a-163aa7c92ec5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/contants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/myjson.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/logs/buys.log" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/logs/buys.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/logs/crontab.log" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/logs/crontab.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buybuybuy/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/settings/dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Buybuybuy/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,10 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Buybuybuy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541388561138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Buybuybuy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541425780897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Buybuybuy$demo.coverage" NAME="demo Coverage Results" MODIFIED="1541247251426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/fast_dfs" />
     <SUITE FILE_PATH="coverage/Buybuybuy$dev.coverage" NAME="dev Coverage Results" MODIFIED="1541159102899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Buybuybuy/settings" />
     <SUITE FILE_PATH="coverage/Buybuybuy$jwt_token.coverage" NAME="jwt_token Coverage Results" MODIFIED="1540880262192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/Buybuybuy$tests.coverage" NAME="tests Coverage Results" MODIFIED="1541420755380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Buybuybuy/apps/carts" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -77,38 +74,22 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+            <state relative-caret-position="485">
+              <caret line="203" column="29" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
               <folding>
-                <element signature="e#325#418#0" />
-                <element signature="e#503#605#0" />
-                <element signature="e#344#375#0" />
-                <element signature="e#787#2513#0" />
-                <element signature="e#823#873#0" />
-                <element signature="e#1302#2116#0" />
-                <element signature="e#1302#1321#0" />
-                <element signature="e#1864#1958#0" />
-                <element signature="e#2143#2488#0" />
-                <element signature="e#2143#2159#0" />
-                <element signature="e#2626#2955#0" />
-                <element signature="e#2626#2640#0" />
-                <element signature="e#2807#2952#0" />
-                <element signature="e#2982#3695#0" />
-                <element signature="e#2982#2994#0" />
-                <element signature="e#3603#3695#0" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myjson.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/myjson.py">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="125">
+              <caret line="162" column="18" lean-forward="true" selection-end-line="177" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#266#276#0" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,10 +98,12 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="166">
+              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#124#474#0" />
+                <element signature="e#531#727#0" />
               </folding>
             </state>
           </provider>
@@ -155,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/celery_tasks/main.py" />
         <option value="$PROJECT_DIR$/celery_tasks/email/tasks.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b71a34e4-0ee0-4f07-becd-2fd23e7e4e9b/console.sql" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/areas/models.py" />
@@ -202,9 +184,10 @@
         <option value="$PROJECT_DIR$/Buybuybuy/urls.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/contants.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" />
-        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" />
         <option value="$PROJECT_DIR$/utils/myjson.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/settings/dev.py" />
+        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" />
+        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" />
       </list>
     </option>
@@ -262,13 +245,6 @@
               <item name="Buybuybuy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Buybuybuy" type="462c0819:PsiDirectoryNode" />
               <item name="Buybuybuy" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Buybuybuy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Buybuybuy" type="462c0819:PsiDirectoryNode" />
-              <item name="Buybuybuy" type="462c0819:PsiDirectoryNode" />
               <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -313,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.tests">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Buybuybuy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -390,6 +366,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Buybuybuy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Buybuybuy/apps/carts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Buybuybuy" type="Python.DjangoServer" factoryName="Django server">
       <module name="Buybuybuy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -418,10 +413,12 @@
       <item itemvalue="Python.dev" />
       <item itemvalue="Python.jwt_token" />
       <item itemvalue="Python.demo" />
+      <item itemvalue="Python.tests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.manage" />
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.dev" />
         <item itemvalue="Python.jwt_token" />
@@ -501,24 +498,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="633" extended-state="6" />
+    <frame x="67" y="25" width="662" height="635" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.497006" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3473054" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32505175" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43538767" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6891089" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24466193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3029703" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29540917" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.08035004" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.11466666" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3253493" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3283972" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3972056" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -527,6 +524,30 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.3258427" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2442323" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3473054" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05742574" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32505175" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3253493" />
+      <window_info anchor="right" id="Database" order="3" weight="0.11466666" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.29540917" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3283972" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3980198" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3258427" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -561,52 +582,10 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/contents/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/users/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/contents/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/paginator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="109" column="50" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/templates/search/indexes/goods/sku_text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -625,13 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="9" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -810,49 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="142" column="26" selection-start-line="142" selection-start-column="26" selection-end-line="142" selection-end-column="26" />
-          <folding>
-            <element signature="e#233#601#0" />
-            <element signature="e#233#253#1" />
-            <element signature="e#449#552#0" />
-            <element signature="e#585#601#0" />
-            <element signature="e#639#1117#0" />
-            <element signature="e#639#659#1" />
-            <element signature="e#957#1059#0" />
-            <element signature="e#1092#1117#0" />
-            <element signature="e#1148#1519#0" />
-            <element signature="e#1148#1166#1" />
-            <element signature="e#1378#1470#0" />
-            <element signature="e#1503#1519#0" />
-            <element signature="e#1550#2591#0" />
-            <element signature="e#1550#1571#1" />
-            <element signature="e#2450#2542#0" />
-            <element signature="e#2575#2591#0" />
-            <element signature="e#2635#3014#0" />
-            <element signature="e#2635#2655#1" />
-            <element signature="e#2827#2935#0" />
-            <element signature="e#2968#3014#0" />
-            <element signature="e#3059#3447#0" />
-            <element signature="e#3059#3079#1" />
-            <element signature="e#3263#3372#0" />
-            <element signature="e#3405#3447#0" />
-            <element signature="e#3476#3497#1" />
-            <element signature="e#4598#4636#0" />
-            <element signature="e#4670#5018#0" />
-            <element signature="e#4670#4691#1" />
-            <element signature="e#4845#4944#0" />
-            <element signature="e#4977#5018#0" />
-            <element signature="e#5060#5590#0" />
-            <element signature="e#5060#5083#1" />
-            <element signature="e#5382#5489#0" />
-            <element signature="e#5522#5590#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/copyreg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -952,16 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -972,10 +891,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/django/utils/cache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="294" selection-start-line="294" selection-end-line="294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="414" selection-start-line="414" selection-end-line="414" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="1" lean-forward="true" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.vritualenvs/django_py3/lib/python3.6/site-packages/django/conf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/myjson.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="334">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#266#276#0" />
@@ -995,27 +956,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="162" column="18" lean-forward="true" selection-end-line="177" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="116" column="6" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
+          <folding>
+            <element signature="e#233#601#0" />
+            <element signature="e#233#253#1" />
+            <element signature="e#449#552#0" />
+            <element signature="e#585#601#0" />
+            <element signature="e#639#1117#0" />
+            <element signature="e#639#659#1" />
+            <element signature="e#957#1059#0" />
+            <element signature="e#1092#1117#0" />
+            <element signature="e#1148#1519#0" />
+            <element signature="e#1148#1166#1" />
+            <element signature="e#1378#1470#0" />
+            <element signature="e#1503#1519#0" />
+            <element signature="e#1550#2591#0" />
+            <element signature="e#1550#1571#1" />
+            <element signature="e#2450#2542#0" />
+            <element signature="e#2575#2591#0" />
+            <element signature="e#2635#3014#0" />
+            <element signature="e#2635#2655#1" />
+            <element signature="e#2827#2935#0" />
+            <element signature="e#2968#3014#0" />
+            <element signature="e#3059#3447#0" />
+            <element signature="e#3059#3079#1" />
+            <element signature="e#3263#3372#0" />
+            <element signature="e#3405#3447#0" />
+            <element signature="e#4598#4636#0" />
+            <element signature="e#4670#5018#0" />
+            <element signature="e#4670#4691#1" />
+            <element signature="e#4845#4944#0" />
+            <element signature="e#4977#5018#0" />
+            <element signature="e#5060#5590#0" />
+            <element signature="e#5060#5083#1" />
+            <element signature="e#5382#5489#0" />
+            <element signature="e#5522#5590#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#124#474#0" />
+            <element signature="e#531#727#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="93" column="14" lean-forward="true" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+        <state relative-caret-position="485">
+          <caret line="203" column="29" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
           <folding>
-            <element signature="e#325#418#0" />
-            <element signature="e#503#605#0" />
-            <element signature="e#344#375#0" />
-            <element signature="e#787#2513#0" />
-            <element signature="e#823#873#0" />
-            <element signature="e#1302#2116#0" />
-            <element signature="e#1302#1321#0" />
-            <element signature="e#1864#1958#0" />
-            <element signature="e#2143#2488#0" />
-            <element signature="e#2143#2159#0" />
-            <element signature="e#2626#2955#0" />
-            <element signature="e#2626#2640#0" />
-            <element signature="e#2807#2952#0" />
-            <element signature="e#2982#3695#0" />
-            <element signature="e#2982#2994#0" />
-            <element signature="e#3603#3695#0" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

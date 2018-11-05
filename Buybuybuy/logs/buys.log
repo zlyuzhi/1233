@@ -8873,3 +8873,1578 @@ INFO 2018-11-05 11:29:24,966 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
 INFO 2018-11-05 11:31:03,765 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
 INFO 2018-11-05 11:32:03,360 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
 INFO 2018-11-05 11:32:03,464 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:33:03,501 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:34:04,408 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:35:03,968 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:37:04,270 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:41:03,545 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:42:03,478 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:43:03,298 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 11:43:03,423 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:44:03,209 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:45:03,938 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:46:03,549 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:49:03,893 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:49:53,691 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:53,745 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:49:54,269 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:54,300 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:49:54,484 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:54,519 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:49:54,724 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:54,748 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+INFO 2018-11-05 11:49:57,012 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:49:58,826 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:58,852 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:49:59,125 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:49:59,153 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+INFO 2018-11-05 11:50:03,832 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+ERROR 2018-11-05 11:50:10,122 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:50:10,160 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:50:12,353 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:50:12,380 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:50:13,248 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:50:13,279 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:50:15,306 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:50:15,325 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+ERROR 2018-11-05 11:50:16,143 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 162, in put
+    response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/http/response.py", line 210, in set_cookie
+    max_age)
+TypeError: unsupported operand type(s) for +: 'float' and 'module'
+ERROR 2018-11-05 11:50:16,169 basehttp 124 "PUT /cart/ HTTP/1.1" 500 20406
+INFO 2018-11-05 11:51:03,656 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:52:03,831 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:52:30,973 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:52:35,556 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:35,968 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:36,535 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:36,668 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:37,395 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:37,606 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:37,772 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:52:37,973 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 11:53:03,367 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:54:03,619 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 11:54:03,690 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:55:03,173 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:56:03,804 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:57:03,590 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:58:03,256 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 11:59:02,916 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:00:03,719 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:01:03,463 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:02:03,129 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:03:03,637 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:04:03,352 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:05:03,088 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:05:03,150 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:06:03,801 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:07:03,532 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:08:03,222 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:09:03,913 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:10:03,695 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:11:03,624 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:12:03,137 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:13:03,788 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:14:03,599 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:15:03,153 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:15:03,267 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:16:04,074 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:17:03,742 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:18:03,378 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:19:03,209 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:20:03,806 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:21:03,556 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:22:03,260 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:23:03,812 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:24:03,695 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:25:03,550 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:25:03,614 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:26:03,373 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:27:03,108 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:28:03,894 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:29:03,792 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:30:03,371 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:31:03,060 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:32:03,813 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:33:03,539 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:34:03,415 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:35:03,146 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:36:03,911 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:36:03,935 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:37:03,738 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:38:03,522 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:39:03,127 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:40:03,846 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:41:03,684 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:42:03,354 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:43:03,119 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:44:03,808 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:45:03,551 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:46:03,165 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:47:02,814 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:47:02,877 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:48:03,433 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:49:03,178 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:50:03,758 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:51:03,415 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:52:03,059 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:53:04,056 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:54:03,702 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:55:03,386 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:56:03,256 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:57:03,829 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 12:57:03,879 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:58:03,620 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 12:59:03,307 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:00:02,964 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:01:03,763 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:02:03,405 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:03:03,078 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:04:03,746 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:05:03,508 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:06:03,099 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:07:03,826 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:08:03,432 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 13:08:03,522 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:09:03,129 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:10:03,862 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:11:03,595 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:12:03,324 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:13:03,090 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:14:03,698 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:15:03,457 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:16:03,101 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:17:03,768 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:18:03,516 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 13:18:03,587 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:19:03,211 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:20:02,994 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:21:03,557 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:22:03,188 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:23:02,910 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:24:03,641 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:25:03,495 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:26:03,221 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:27:02,844 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:28:03,631 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 13:28:03,709 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:29:03,338 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:30:03,146 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:31:03,944 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:32:03,547 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:33:03,203 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:34:02,880 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:35:03,725 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:36:03,398 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:37:02,880 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:38:03,609 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:39:03,412 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 13:39:03,499 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:40:03,132 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:41:03,806 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:42:03,520 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:43:03,127 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:44:03,800 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:45:03,443 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:46:03,270 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:47:03,843 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:48:03,498 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:49:03,192 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:50:02,938 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 13:50:03,013 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:51:03,609 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:52:03,268 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:53:03,020 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:54:03,697 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:55:03,539 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:56:03,232 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:57:02,950 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:58:03,657 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 13:59:03,331 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:00:03,110 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 14:00:03,193 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:01:03,781 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:02:03,603 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:03:03,214 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:04:02,971 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:05:03,767 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:06:03,281 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:07:02,920 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:08:03,984 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:12:03,579 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 14:12:03,652 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:13:03,287 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:14:03,450 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:15:15,881 basehttp 124 "GET /cart/ HTTP/1.1" 200 741
+INFO 2018-11-05 14:15:20,196 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 14:15:20,693 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 14:15:20,910 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 14:15:28,595 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 14:15:31,847 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+WARNING 2018-11-05 14:15:43,924 basehttp 124 "DELETE /cart/ HTTP/1.1" 405 48
+INFO 2018-11-05 14:15:50,995 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 14:15:59,931 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 14:16:00,060 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+WARNING 2018-11-05 14:16:08,939 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 14:16:08,965 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 14:16:08,978 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-05 14:16:08,996 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 14:16:10,801 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 14:16:11,035 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 14:16:12,775 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 81, in post
+    redis_cli = get_redis_connection('cart_dict')
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django_redis/__init__.py", line 14, in get_redis_connection
+    cache = caches[alias]
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/cache/__init__.py", line 77, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'cart_dict' in settings.CACHES
+ERROR 2018-11-05 14:16:12,849 basehttp 124 "POST /cart/ HTTP/1.1" 500 20751
+INFO 2018-11-05 14:16:17,717 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 14:16:20,429 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 14:17:05,413 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 14:17:28,937 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 14:17:35,243 exceptions 25 [<carts.views.CartView object at 0x7f90f077af60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:17:35,257 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:17:39,503 exceptions 25 [<carts.views.CartView object at 0x7f90f0710f60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:17:39,513 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:18:04,137 exceptions 25 [<carts.views.CartView object at 0x7f90f077ad68>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:18:04,141 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:19:04,002 exceptions 25 [<carts.views.CartView object at 0x7f90f071bf60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:19:04,003 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:20:04,181 exceptions 25 [<carts.views.CartView object at 0x7f90f0724ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:20:04,185 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:21:04,003 exceptions 25 [<carts.views.CartView object at 0x7f90f0727e80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:21:04,005 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 14:22:04,949 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 14:22:05,141 exceptions 25 [<carts.views.CartView object at 0x7f90f07244a8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:22:05,145 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:23:04,855 exceptions 25 [<carts.views.CartView object at 0x7f90f071b400>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:23:04,857 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:24:04,041 exceptions 25 [<carts.views.CartView object at 0x7f90f0710c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:24:04,057 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:25:04,654 exceptions 25 [<carts.views.CartView object at 0x7f90f0723c50>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:25:04,658 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:26:03,541 exceptions 25 [<carts.views.CartView object at 0x7fd7ce32a898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:26:03,554 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:27:03,099 exceptions 25 [<carts.views.CartView object at 0x7fa388a97860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:27:03,101 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:27:22,090 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 118, in get
+    key = 'cart_%d' % request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 14:27:22,161 basehttp 124 "GET /cart/ HTTP/1.1" 500 19261
+ERROR 2018-11-05 14:28:04,443 exceptions 25 [<carts.views.CartView object at 0x7fa38881d940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:28:04,447 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:29:04,010 exceptions 25 [<carts.views.CartView object at 0x7fa38881fcf8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:29:04,013 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:30:03,905 exceptions 25 [<carts.views.CartView object at 0x7fa388809b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:30:03,920 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:31:03,906 exceptions 25 [<carts.views.CartView object at 0x7fa388823cf8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:31:03,916 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:32:03,842 exceptions 25 [<carts.views.CartView object at 0x7fa3888094e0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:32:03,854 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 14:33:03,606 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 14:33:03,759 exceptions 25 [<carts.views.CartView object at 0x7fa38881f7f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:33:03,762 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:34:03,610 exceptions 25 [<carts.views.CartView object at 0x7fa38881d588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:34:03,616 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:35:04,299 exceptions 25 [<carts.views.CartView object at 0x7fa388815358>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:35:04,303 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:36:04,335 exceptions 25 [<carts.views.CartView object at 0x7fa388a7c6d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:36:04,337 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:37:03,933 exceptions 25 [<carts.views.CartView object at 0x7fa38881ffd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:37:03,959 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:38:04,006 exceptions 25 [<carts.views.CartView object at 0x7fa3887a72e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:38:04,008 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:39:04,006 exceptions 25 [<carts.views.CartView object at 0x7fa3888231d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:39:04,015 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:40:03,600 exceptions 25 [<carts.views.CartView object at 0x7fa388809c50>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:40:03,609 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:41:03,662 exceptions 25 [<carts.views.CartView object at 0x7fa38881d198>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:41:03,680 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:42:03,608 exceptions 25 [<carts.views.CartView object at 0x7fa3888095f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:42:03,612 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 14:43:04,481 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 14:43:04,561 exceptions 25 [<carts.views.CartView object at 0x7fa388823080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:43:04,562 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:44:04,207 exceptions 25 [<carts.views.CartView object at 0x7fa38881f6a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:44:04,218 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:45:04,128 exceptions 25 [<carts.views.CartView object at 0x7fa388815860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:45:04,130 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:46:04,172 exceptions 25 [<carts.views.CartView object at 0x7fa388a677b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:46:04,178 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:47:03,862 exceptions 25 [<carts.views.CartView object at 0x7fa3887a77f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:47:03,867 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:48:03,838 exceptions 25 [<carts.views.CartView object at 0x7fa38881f908>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:48:03,843 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:49:03,898 exceptions 25 [<carts.views.CartView object at 0x7fa388823160>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:49:03,914 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:50:03,724 exceptions 25 [<carts.views.CartView object at 0x7fa388809e80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:50:03,727 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:51:03,234 exceptions 25 [<carts.views.CartView object at 0x7fa389880198>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:51:03,238 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:52:04,396 exceptions 25 [<carts.views.CartView object at 0x7fa388809160>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:52:04,418 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:53:04,109 exceptions 25 [<carts.views.CartView object at 0x7fa388823ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:53:04,114 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 14:54:03,950 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 14:54:04,056 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:54:04,065 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:55:03,594 exceptions 25 [<carts.views.CartView object at 0x7fa3888154a8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:55:03,609 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:56:03,669 exceptions 25 [<carts.views.CartView object at 0x7fa3887ae438>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:56:03,670 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:57:04,230 exceptions 25 [<carts.views.CartView object at 0x7fa3888155c0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:57:04,235 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:58:04,115 exceptions 25 [<carts.views.CartView object at 0x7fa38881fba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:58:04,116 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 14:59:04,062 exceptions 25 [<carts.views.CartView object at 0x7fa3888230b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 14:59:04,066 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:00:03,736 exceptions 25 [<carts.views.CartView object at 0x7fa388809ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:00:03,755 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:01:03,662 exceptions 25 [<carts.views.CartView object at 0x7fa3887d06a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:01:03,663 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:02:03,503 exceptions 25 [<carts.views.CartView object at 0x7fa388809c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:02:03,513 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:03:04,376 exceptions 25 [<carts.views.CartView object at 0x7fa388823358>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:03:04,381 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:04:04,288 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:04:04,389 exceptions 25 [<carts.views.CartView object at 0x7fa38881f358>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:04:04,392 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:05:04,092 exceptions 25 [<carts.views.CartView object at 0x7fa388815710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:05:04,093 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:06:03,958 exceptions 25 [<carts.views.CartView object at 0x7fa3887d34e0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:06:03,968 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:07:03,778 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7f98>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:07:03,782 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:08:03,783 exceptions 25 [<carts.views.CartView object at 0x7fa38881fac8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:08:03,790 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:09:03,914 exceptions 25 [<carts.views.CartView object at 0x7fa38a355fd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:09:03,915 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:10:04,021 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0ac8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:10:04,026 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:11:04,012 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3fd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:11:04,026 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:12:03,639 exceptions 25 [<carts.views.CartView object at 0x7fa388809ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:12:03,643 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:13:03,458 exceptions 25 [<carts.views.CartView object at 0x7fa388823710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:13:03,461 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:14:03,655 exceptions 25 [<carts.views.CartView object at 0x7fa38881f6d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:14:03,667 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:15:04,544 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:15:04,659 exceptions 25 [<carts.views.CartView object at 0x7fa3888159b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:15:04,676 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:16:04,355 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7e48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:16:04,363 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:17:04,179 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7c88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:17:04,188 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:18:04,161 exceptions 25 [<carts.views.CartView object at 0x7fa38881f828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:18:04,163 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:19:03,789 exceptions 25 [<carts.views.CartView object at 0x7fa388823fd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:19:03,790 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:20:03,851 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:20:03,853 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:21:03,889 exceptions 25 [<carts.views.CartView object at 0x7fa3887db940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:21:03,890 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:22:03,869 exceptions 25 [<carts.views.CartView object at 0x7fa3887dbef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:22:03,870 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:23:03,561 exceptions 25 [<carts.views.CartView object at 0x7fa388823ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:23:03,565 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:24:03,621 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:24:03,641 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:25:04,850 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:25:05,029 exceptions 25 [<carts.views.CartView object at 0x7fa3887ae198>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:25:05,030 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:26:03,791 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0780>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:26:03,794 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:27:03,585 exceptions 25 [<carts.views.CartView object at 0x7fa38881f748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:27:03,587 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:28:03,537 exceptions 25 [<carts.views.CartView object at 0x7fa38881d1d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:28:03,547 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:29:03,379 exceptions 25 [<carts.views.CartView object at 0x7fa388809048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:29:03,397 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:30:04,434 exceptions 25 [<carts.views.CartView object at 0x7fa3887dbf60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:30:04,444 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:31:04,338 exceptions 25 [<carts.views.CartView object at 0x7fa3887672b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:31:04,340 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:32:04,008 exceptions 25 [<carts.views.CartView object at 0x7fa388abcd68>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:32:04,019 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:33:03,929 exceptions 25 [<carts.views.CartView object at 0x7fa3888231d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:33:03,940 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:34:03,937 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7b38>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:34:03,945 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:35:03,579 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:35:03,585 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:36:03,454 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:36:03,539 exceptions 25 [<carts.views.CartView object at 0x7fa388767f60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:36:03,540 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:37:04,464 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:37:04,466 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:38:04,438 exceptions 25 [<carts.views.CartView object at 0x7fa38881f3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:38:04,442 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:39:04,228 exceptions 25 [<carts.views.CartView object at 0x7fa3887e05c0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:39:04,231 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:40:04,224 exceptions 25 [<carts.views.CartView object at 0x7fa3887db6d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:40:04,228 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:41:03,847 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:41:03,849 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:42:03,873 exceptions 25 [<carts.views.CartView object at 0x7fa3887dba58>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:42:03,876 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:43:03,243 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:43:03,247 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:44:03,691 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0eb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:44:03,702 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:45:03,507 exceptions 25 [<carts.views.CartView object at 0x7fa388767cc0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:45:03,514 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:46:04,254 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:46:04,489 exceptions 25 [<carts.views.CartView object at 0x7fa3887d38d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:46:04,499 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:47:04,218 exceptions 25 [<carts.views.CartView object at 0x7fa3887677f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:47:04,226 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:48:04,109 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:48:04,110 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:49:04,217 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0518>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:49:04,231 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:50:03,968 exceptions 25 [<carts.views.CartView object at 0x7fa3887d76d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:50:03,982 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:51:03,959 exceptions 25 [<carts.views.CartView object at 0x7fa3887ae400>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:51:03,974 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:52:03,477 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7198>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:52:03,480 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:53:03,684 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0be0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:53:03,686 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:54:03,447 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:54:03,451 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:55:04,447 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3b70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:55:04,450 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:56:04,283 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:56:04,287 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 15:57:04,195 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 15:57:04,309 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3a20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:57:04,330 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:58:04,019 exceptions 25 [<carts.views.CartView object at 0x7fa3887a72e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:58:04,030 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 15:59:03,977 exceptions 25 [<carts.views.CartView object at 0x7fa3887e05f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 15:59:03,979 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:00:03,846 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:00:03,849 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:01:03,672 exceptions 25 [<carts.views.CartView object at 0x7fa388a7c898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:01:03,676 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:02:03,566 exceptions 25 [<carts.views.CartView object at 0x7fa3887d79e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:02:03,572 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:03:04,390 exceptions 25 [<carts.views.CartView object at 0x7fa3887e02e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:03:04,392 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:04:04,200 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:04:04,222 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:05:04,017 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:05:04,023 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:06:03,982 exceptions 25 [<carts.views.CartView object at 0x7fa388815128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:06:03,994 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:07:03,947 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3160>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:07:03,949 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 16:08:03,708 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 16:08:03,840 exceptions 25 [<carts.views.CartView object at 0x7fa3887a70f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:08:03,847 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:09:03,909 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:09:03,911 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:10:03,747 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:10:03,765 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:11:03,676 exceptions 25 [<carts.views.CartView object at 0x7fa388a67b38>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:11:03,688 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:12:04,553 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:12:04,554 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:13:04,526 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0c88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:13:04,528 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:14:04,324 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7cc0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:14:04,339 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:15:04,263 exceptions 25 [<carts.views.CartView object at 0x7fa388823898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:15:04,266 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:16:04,113 exceptions 25 [<carts.views.CartView object at 0x7fa388809048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:16:04,118 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:17:03,673 exceptions 25 [<carts.views.CartView object at 0x7fa3887679e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:17:03,679 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 16:18:03,952 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 16:18:04,175 exceptions 25 [<carts.views.CartView object at 0x7fa3887a75c0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:18:04,182 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:19:03,746 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:19:03,750 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:20:03,717 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7208>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:20:03,722 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:21:03,628 exceptions 25 [<carts.views.CartView object at 0x7fa38881def0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:21:03,634 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:22:04,366 exceptions 25 [<carts.views.CartView object at 0x7fa38881f320>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:22:04,367 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:23:04,268 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:23:04,274 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:24:04,193 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7cf8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:24:04,210 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:25:04,275 exceptions 25 [<carts.views.CartView object at 0x7fa388809320>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:25:04,282 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:26:04,305 exceptions 25 [<carts.views.CartView object at 0x7fa38876bb00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:26:04,324 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:27:04,143 exceptions 25 [<carts.views.CartView object at 0x7fa38876b518>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:27:04,159 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:28:03,950 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7438>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:28:03,953 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 16:29:04,227 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 16:29:04,352 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:29:04,354 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:30:04,040 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7be0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:30:04,043 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:31:03,933 exceptions 25 [<carts.views.CartView object at 0x7fa38876d940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:31:03,961 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:32:03,772 exceptions 25 [<carts.views.CartView object at 0x7fa38881f3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:32:03,784 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:33:03,708 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:33:03,712 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:34:03,590 exceptions 25 [<carts.views.CartView object at 0x7fa3887e07b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:34:03,598 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:35:04,471 exceptions 25 [<carts.views.CartView object at 0x7fa3887d30f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:35:04,478 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:36:04,249 exceptions 25 [<carts.views.CartView object at 0x7fa388772470>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:36:04,257 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:37:04,222 exceptions 25 [<carts.views.CartView object at 0x7fa3887a72e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:37:04,242 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:38:04,069 exceptions 25 [<carts.views.CartView object at 0x7fa38881fe48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:38:04,094 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:39:03,796 exceptions 25 [<carts.views.CartView object at 0x7fa38876d3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:39:03,798 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 16:40:03,712 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 16:40:03,873 exceptions 25 [<carts.views.CartView object at 0x7fa38881dc88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:40:03,879 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:41:03,686 exceptions 25 [<carts.views.CartView object at 0x7fa3888093c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:41:03,695 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:42:03,725 exceptions 25 [<carts.views.CartView object at 0x7fa38876d048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:42:03,735 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:43:04,423 exceptions 25 [<carts.views.CartView object at 0x7fa38881fef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:43:04,431 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:44:04,308 exceptions 25 [<carts.views.CartView object at 0x7fa3887a79e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:44:04,310 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:45:04,188 exceptions 25 [<carts.views.CartView object at 0x7fa38876b208>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:45:04,190 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:46:03,959 exceptions 25 [<carts.views.CartView object at 0x7fa388a67390>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:46:03,966 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:47:03,845 exceptions 25 [<carts.views.CartView object at 0x7fa3887a76d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:47:03,847 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:48:03,566 exceptions 25 [<carts.views.CartView object at 0x7fa38881f978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:48:03,581 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:49:03,507 exceptions 25 [<carts.views.CartView object at 0x7fa38876d7b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:49:03,524 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 16:50:04,450 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 16:50:04,674 exceptions 25 [<carts.views.CartView object at 0x7fa388809e80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:50:04,683 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:51:04,453 exceptions 25 [<carts.views.CartView object at 0x7fa389880160>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:51:04,459 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:52:04,312 exceptions 25 [<carts.views.CartView object at 0x7fa388abce48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:52:04,315 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:53:04,216 exceptions 25 [<carts.views.CartView object at 0x7fa38881f2e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:53:04,221 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:54:04,260 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:54:04,262 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:55:03,771 exceptions 25 [<carts.views.CartView object at 0x7fa38876bbe0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:55:03,773 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:56:03,905 exceptions 25 [<carts.views.CartView object at 0x7fa388a7ca20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:56:03,907 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:57:03,633 exceptions 25 [<carts.views.CartView object at 0x7fa3887a76d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:57:03,638 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:58:03,570 exceptions 25 [<carts.views.CartView object at 0x7fa38881f518>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:58:03,573 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 16:59:03,707 exceptions 25 [<carts.views.CartView object at 0x7fa38876d3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 16:59:03,716 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:00:03,554 exceptions 25 [<carts.views.CartView object at 0x7fa388a977b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:00:03,578 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 17:01:04,442 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:01:04,574 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:01:04,587 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:02:04,280 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0fd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:02:04,291 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:03:04,192 exceptions 25 [<carts.views.CartView object at 0x7fa38876d128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:03:04,195 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:04:04,076 exceptions 25 [<carts.views.CartView object at 0x7fa38881fc88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:04:04,086 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:05:03,794 exceptions 25 [<carts.views.CartView object at 0x7fa38876bf28>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:05:03,795 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:06:03,815 exceptions 25 [<carts.views.CartView object at 0x7fa388823ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:06:03,831 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:07:03,599 exceptions 25 [<carts.views.CartView object at 0x7fa38881fa90>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:07:03,602 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:08:03,733 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:08:03,737 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:09:03,683 exceptions 25 [<carts.views.CartView object at 0x7fa38876d860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:09:03,689 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:10:04,357 exceptions 25 [<carts.views.CartView object at 0x7fa3887d05c0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:10:04,359 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:11:04,458 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:11:04,459 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 17:12:04,261 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:12:04,356 exceptions 25 [<carts.views.CartView object at 0x7fa38881d0f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:12:04,366 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:13:04,133 exceptions 25 [<carts.views.CartView object at 0x7fa38876d470>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:13:04,136 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:14:03,769 exceptions 25 [<carts.views.CartView object at 0x7fa38881f128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:14:03,771 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:15:04,021 exceptions 25 [<carts.views.CartView object at 0x7fa38876b6a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:15:04,025 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:16:03,842 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7eb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:16:03,844 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:17:03,742 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:17:03,747 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:18:03,650 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:18:03,665 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:19:03,447 exceptions 25 [<carts.views.CartView object at 0x7fa38876d588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:19:03,452 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:20:04,350 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3b70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:20:04,352 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:21:04,199 exceptions 25 [<carts.views.CartView object at 0x7fa3887db550>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:21:04,209 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 17:30:07,382 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:30:07,486 exceptions 25 [<carts.views.CartView object at 0x7fa38876d550>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:30:07,492 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:31:04,362 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:31:04,373 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:32:04,471 exceptions 25 [<carts.views.CartView object at 0x7fa38881f128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:32:04,487 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:33:07,921 exceptions 25 [<carts.views.CartView object at 0x7fa38876b3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:33:07,926 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:34:04,012 exceptions 25 [<carts.views.CartView object at 0x7fa3887d11d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:34:04,024 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:35:04,062 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:35:04,071 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:36:03,905 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0780>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:36:03,911 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:37:03,794 exceptions 25 [<carts.views.CartView object at 0x7fa38876d2e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:37:03,802 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:38:03,785 exceptions 25 [<carts.views.CartView object at 0x7fa3887dbc88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:38:03,795 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:39:03,661 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1cc0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:39:03,666 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:40:03,594 exceptions 25 [<carts.views.CartView object at 0x7fa3887d33c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:40:03,599 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 17:41:03,694 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:41:03,841 exceptions 25 [<carts.views.CartView object at 0x7fa388a97c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:41:03,882 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:42:03,426 exceptions 25 [<carts.views.CartView object at 0x7fa38881f9e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:42:03,427 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:43:03,503 exceptions 25 [<carts.views.CartView object at 0x7fa3888155f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:43:03,522 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:44:04,442 exceptions 25 [<carts.views.CartView object at 0x7fa388771b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:44:04,446 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:45:04,570 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:45:04,572 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:46:04,458 exceptions 25 [<carts.views.CartView object at 0x7fa388771d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:46:04,459 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:47:04,236 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1358>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:47:04,237 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:48:04,128 exceptions 25 [<carts.views.CartView object at 0x7fa3887dbe80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:48:04,134 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:49:03,865 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:49:03,867 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:50:04,086 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:50:04,097 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 17:51:04,053 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 17:51:04,133 exceptions 25 [<carts.views.CartView object at 0x7fa38876d978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:51:04,141 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:52:04,009 exceptions 25 [<carts.views.CartView object at 0x7fa3887720b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:52:04,014 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:53:04,099 exceptions 25 [<carts.views.CartView object at 0x7fa388771390>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:53:04,105 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:54:03,768 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3a90>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:54:03,770 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:55:03,812 exceptions 25 [<carts.views.CartView object at 0x7fa3887715f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:55:03,816 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:56:03,913 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0f60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:56:03,917 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:57:03,903 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1f60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:57:03,905 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:58:03,674 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:58:03,682 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 17:59:03,500 exceptions 25 [<carts.views.CartView object at 0x7fa388823160>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 17:59:03,504 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:00:04,534 exceptions 25 [<carts.views.CartView object at 0x7fa3887ae6d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:00:04,540 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:01:04,256 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:01:04,330 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1e48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:01:04,342 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:02:04,118 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0278>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:02:04,119 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:03:04,283 exceptions 25 [<carts.views.CartView object at 0x7fa388771eb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:03:04,292 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:04:04,117 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:04:04,123 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:05:03,814 exceptions 25 [<carts.views.CartView object at 0x7fa3887715f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:05:03,820 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:06:03,750 exceptions 25 [<carts.views.CartView object at 0x7fa388772898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:06:03,752 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:07:03,685 exceptions 25 [<carts.views.CartView object at 0x7fa3887d10f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:07:03,698 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:08:03,465 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7a20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:08:03,474 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:09:04,441 exceptions 25 [<carts.views.CartView object at 0x7fa388a4fb70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:09:04,450 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:10:04,242 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:10:04,250 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:11:03,861 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:11:03,865 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:12:03,872 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:12:03,956 exceptions 25 [<carts.views.CartView object at 0x7fa3887e06a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:12:03,959 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:13:03,804 exceptions 25 [<carts.views.CartView object at 0x7fa3887726a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:13:03,806 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:14:03,719 exceptions 25 [<carts.views.CartView object at 0x7fa388815828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:14:03,725 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:15:03,618 exceptions 25 [<carts.views.CartView object at 0x7fa3887716d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:15:03,624 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:16:04,416 exceptions 25 [<carts.views.CartView object at 0x7fa3887e0b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:16:04,419 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:17:04,312 exceptions 25 [<carts.views.CartView object at 0x7fa3887d79e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:17:04,314 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:18:04,159 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1c50>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:18:04,165 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:19:04,020 exceptions 25 [<carts.views.CartView object at 0x7fa38876bf28>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:19:04,024 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:20:04,035 exceptions 25 [<carts.views.CartView object at 0x7fa3887d72b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:20:04,040 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:21:04,036 exceptions 25 [<carts.views.CartView object at 0x7fa3887d10b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:21:04,048 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:22:03,736 exceptions 25 [<carts.views.CartView object at 0x7fa3887e06a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:22:03,741 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:23:03,594 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:23:03,672 exceptions 25 [<carts.views.CartView object at 0x7fa388772f28>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:23:03,674 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:24:03,334 exceptions 25 [<carts.views.CartView object at 0x7fa388a67828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:24:03,342 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:25:04,439 exceptions 25 [<carts.views.CartView object at 0x7fa3887727f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:25:04,443 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:26:04,003 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:26:04,006 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:27:04,295 exceptions 25 [<carts.views.CartView object at 0x7fa388a4fba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:27:04,304 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:28:03,922 exceptions 25 [<carts.views.CartView object at 0x7fa3887db240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:28:03,935 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:29:04,037 exceptions 25 [<carts.views.CartView object at 0x7fa38881d748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:29:04,042 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:30:03,813 exceptions 25 [<carts.views.CartView object at 0x7fa3887db390>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:30:03,818 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:31:03,657 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:31:03,659 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:32:03,455 exceptions 25 [<carts.views.CartView object at 0x7fa3887d78d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:32:03,456 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:33:05,220 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:33:05,356 exceptions 25 [<carts.views.CartView object at 0x7fa3887726d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:33:05,358 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:34:03,719 exceptions 25 [<carts.views.CartView object at 0x7fa38877b6d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:34:03,720 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:35:03,451 exceptions 25 [<carts.views.CartView object at 0x7fa3887e06a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:35:03,455 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:36:04,200 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:36:04,207 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:37:03,789 exceptions 25 [<carts.views.CartView object at 0x7fa3887d10f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:37:03,793 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:38:03,465 exceptions 25 [<carts.views.CartView object at 0x7fa388809898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:38:03,472 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:39:04,221 exceptions 25 [<carts.views.CartView object at 0x7fa38877c240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:39:04,234 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:40:03,836 exceptions 25 [<carts.views.CartView object at 0x7fa3887d16d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:40:03,840 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:41:03,487 exceptions 25 [<carts.views.CartView object at 0x7fa3887a7128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:41:03,491 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:42:04,147 exceptions 25 [<carts.views.CartView object at 0x7fa3887d72b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:42:04,149 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:43:03,836 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:43:03,843 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:44:03,501 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:44:03,625 exceptions 25 [<carts.views.CartView object at 0x7fa38877ceb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:44:03,628 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:45:03,288 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1198>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:45:03,290 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:46:03,736 exceptions 25 [<carts.views.CartView object at 0x7fa38877c128>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:46:03,741 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:47:03,503 exceptions 25 [<carts.views.CartView object at 0x7fa38877b358>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:47:03,506 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:48:03,403 exceptions 25 [<carts.views.CartView object at 0x7fa3887727b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:48:03,405 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:49:04,135 exceptions 25 [<carts.views.CartView object at 0x7fa388a679b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:49:04,143 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:50:03,787 exceptions 25 [<carts.views.CartView object at 0x7fa38881db70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:50:03,791 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:51:03,475 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:51:03,477 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:52:04,221 exceptions 25 [<carts.views.CartView object at 0x7fa38877bc50>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:52:04,223 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:53:03,786 exceptions 25 [<carts.views.CartView object at 0x7fa38877c588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:53:03,790 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 18:54:03,618 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 18:54:03,723 exceptions 25 [<carts.views.CartView object at 0x7fa38876b630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:54:03,724 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:55:03,063 exceptions 25 [<carts.views.CartView object at 0x7fa38877c240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:55:03,067 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:56:03,986 exceptions 25 [<carts.views.CartView object at 0x7fa38877b9b0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:56:03,994 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:57:03,763 exceptions 25 [<carts.views.CartView object at 0x7fa38881d668>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:57:03,769 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:58:03,392 exceptions 25 [<carts.views.CartView object at 0x7fa388772da0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:58:03,395 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 18:59:04,257 exceptions 25 [<carts.views.CartView object at 0x7fa388a7cc18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 18:59:04,270 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:00:03,827 exceptions 25 [<carts.views.CartView object at 0x7fa3887727f0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:00:03,832 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:01:03,576 exceptions 25 [<carts.views.CartView object at 0x7fa38881da20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:01:03,577 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:02:03,491 exceptions 25 [<carts.views.CartView object at 0x7fa38877b3c8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:02:03,494 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:03:04,235 exceptions 25 [<carts.views.CartView object at 0x7fa38877c390>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:03:04,240 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:04:03,882 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 19:04:03,989 exceptions 25 [<carts.views.CartView object at 0x7fa3887d0278>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:04:04,005 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:05:03,513 exceptions 25 [<carts.views.CartView object at 0x7fa38877c2e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:05:03,515 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:06:03,112 exceptions 25 [<carts.views.CartView object at 0x7fa38877b4a8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:06:03,114 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:07:03,773 exceptions 25 [<carts.views.CartView object at 0x7fa388a976d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:07:03,776 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:08:03,660 exceptions 25 [<carts.views.CartView object at 0x7fa388772b70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:08:03,665 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:09:03,349 exceptions 25 [<carts.views.CartView object at 0x7fa3887a76d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:09:03,350 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:10:03,915 exceptions 25 [<carts.views.CartView object at 0x7fa388809f98>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:10:03,917 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:11:03,612 exceptions 25 [<carts.views.CartView object at 0x7fa38876df98>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:11:03,629 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:12:03,568 exceptions 25 [<carts.views.CartView object at 0x7fa38877b9e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:12:03,572 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:13:04,225 exceptions 25 [<carts.views.CartView object at 0x7fa38877c8d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:13:04,229 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:14:03,906 exceptions 25 [<carts.views.CartView object at 0x7fa388771080>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:14:03,908 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:15:03,610 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 19:15:03,849 exceptions 25 [<carts.views.CartView object at 0x7fa38877cba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:15:03,852 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:16:04,295 exceptions 25 [<carts.views.CartView object at 0x7fa38877b400>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:16:04,298 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:17:04,634 exceptions 25 [<carts.views.CartView object at 0x7fa38881dd68>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:17:04,644 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:18:04,131 exceptions 25 [<carts.views.CartView object at 0x7fa388772048>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:18:04,138 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:19:03,990 exceptions 25 [<carts.views.CartView object at 0x7fa3887d3cc0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:19:03,994 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:20:03,878 exceptions 25 [<carts.views.CartView object at 0x7fa3887726a0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:20:03,888 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:21:03,318 exceptions 25 [<carts.views.CartView object at 0x7fa38876d7b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:21:03,327 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:22:04,149 exceptions 25 [<carts.views.CartView object at 0x7fa38877b630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:22:04,155 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:23:03,662 exceptions 25 [<carts.views.CartView object at 0x7fa38877c2e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:23:03,666 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:24:03,775 exceptions 25 [<carts.views.CartView object at 0x7fa3887d7ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:24:03,798 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:25:03,749 exceptions 25 [<carts.views.CartView object at 0x7fa38877ce48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:25:03,751 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:26:04,110 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 19:26:04,209 exceptions 25 [<carts.views.CartView object at 0x7fa38877bd30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:26:04,212 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:27:03,919 exceptions 25 [<carts.views.CartView object at 0x7fa388abcfd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:27:03,938 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:28:03,836 exceptions 25 [<carts.views.CartView object at 0x7fa388772978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:28:03,841 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:29:03,319 exceptions 25 [<carts.views.CartView object at 0x7fa3887dbf98>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:29:03,321 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:30:03,968 exceptions 25 [<carts.views.CartView object at 0x7fa388abcd30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:30:03,973 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:31:03,940 exceptions 25 [<carts.views.CartView object at 0x7fa38876dc50>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:31:03,950 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:32:03,983 exceptions 25 [<carts.views.CartView object at 0x7fa38877bda0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:32:03,985 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:33:05,852 exceptions 25 [<carts.views.CartView object at 0x7fa38877cc18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:33:05,855 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:34:04,140 exceptions 25 [<carts.views.CartView object at 0x7fa38877da58>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:34:04,151 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:35:03,675 exceptions 25 [<carts.views.CartView object at 0x7fa38876be80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:35:03,684 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:36:04,021 exceptions 25 [<carts.views.CartView object at 0x7fa38877b8d0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:36:04,028 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:37:03,795 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 19:37:03,912 exceptions 25 [<carts.views.CartView object at 0x7fa38876de10>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:37:03,927 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:38:03,801 exceptions 25 [<carts.views.CartView object at 0x7fa388772b70>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:38:03,811 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:39:03,701 exceptions 25 [<carts.views.CartView object at 0x7fa38877e898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:39:03,704 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:40:03,309 exceptions 25 [<carts.views.CartView object at 0x7fa388772b00>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:40:03,310 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:41:04,530 exceptions 25 [<carts.views.CartView object at 0x7fa3887d1ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:41:04,552 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:42:04,518 exceptions 25 [<carts.views.CartView object at 0x7fa38877b320>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:42:04,520 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:43:04,332 exceptions 25 [<carts.views.CartView object at 0x7fa38877c240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:43:04,333 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:44:04,525 exceptions 25 [<carts.views.CartView object at 0x7f4d8f418860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:44:04,528 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:44:16,859 exceptions 25 [<carts.views.CartView object at 0x7f4d8f397e10>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:44:16,864 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:44:37,354 exceptions 25 [<carts.views.CartView object at 0x7f4d8f3abe10>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:44:37,358 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:44:49,534 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 19:44:49,745 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:44:54,957 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 19:45:05,019 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 19:45:07,913 exceptions 25 [<carts.views.CartView object at 0x7f4d8f3ab748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:45:07,929 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:45:10,788 exceptions 25 [<carts.views.CartView object at 0x7f4d8f12deb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:45:10,791 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:46:04,447 exceptions 25 [<carts.views.CartView object at 0x7f3a63783860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:46:04,453 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:47:03,586 exceptions 25 [<carts.views.CartView object at 0x7fe18560a860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:47:03,588 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:47:05,827 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 19:47:05,966 exceptions 25 [<carts.views.CartView object at 0x7fe184d86c88>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:47:05,971 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:48:04,167 exceptions 25 [<carts.views.CartView object at 0x7fe184d98c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:48:04,170 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:49:04,256 exceptions 25 [<carts.views.CartView object at 0x7fe184b08ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:49:04,268 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:50:03,828 exceptions 25 [<carts.views.CartView object at 0x7fe184d98828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:50:03,832 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:51:11,916 exceptions 25 [<carts.views.CartView object at 0x7f1fba9997b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:51:11,918 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:51:35,551 exceptions 25 [<carts.views.CartView object at 0x7f16602c7860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:51:35,568 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:51:42,351 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:51:51,723 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 19:51:57,435 exceptions 25 [<carts.views.CartView object at 0x7f1660806a20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:51:57,438 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:52:04,360 exceptions 25 [<carts.views.CartView object at 0x7f165b7ceeb8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:52:04,362 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:52:14,906 exceptions 25 [<carts.views.CartView object at 0x7f165b7d9fd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:52:14,909 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 19:53:05,953 exceptions 25 [<carts.views.CartView object at 0x7f4fe5757208>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:53:05,970 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:53:09,090 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:54:04,389 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:55:04,182 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 19:55:04,487 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 19:55:08,158 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/PycharmProjects/C2B/Buybuybuy/Buybuybuy/apps/carts/views.py", line 118, in get
+    key = 'cart_%d' % request.user.id
+TypeError: %d format: a number is required, not NoneType
+ERROR 2018-11-05 19:55:08,363 basehttp 124 "GET /cart/ HTTP/1.1" 500 20367
+INFO 2018-11-05 19:56:04,709 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:57:05,408 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 19:58:00,567 exceptions 25 [<carts.views.CartView object at 0x7f4fe446b240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:58:00,572 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:58:04,025 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:59:20,333 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-05 19:59:20,396 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 19:59:20,432 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 19:59:20,444 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+ERROR 2018-11-05 19:59:20,460 exceptions 25 [<carts.views.CartView object at 0x7f95b83b5710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:59:20,477 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 19:59:26,743 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 19:59:29,554 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 19:59:38,497 exceptions 25 [<carts.views.CartView object at 0x7f95b80b1940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 19:59:38,502 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:00:04,039 exceptions 25 [<carts.views.CartView object at 0x7f95b80ba978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:00:04,041 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:01:04,173 exceptions 25 [<carts.views.CartView object at 0x7f95b80b1c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:01:04,175 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:02:03,812 exceptions 25 [<carts.views.CartView object at 0x7f95b83b5d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:02:03,817 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:03:03,926 exceptions 25 [<carts.views.CartView object at 0x7f95b80b5828>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:03:03,933 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:04:03,778 exceptions 25 [<carts.views.CartView object at 0x7f95b80c87b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:04:03,779 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:05:04,168 exceptions 25 [<carts.views.CartView object at 0x7f95b80b5710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:05:04,171 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:06:03,983 exceptions 25 [<carts.views.CartView object at 0x7f95b80ba390>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:06:03,988 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:07:03,746 exceptions 25 [<carts.views.CartView object at 0x7f95b80b15f8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:07:03,749 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:08:03,554 exceptions 25 [<carts.views.CartView object at 0x7f95b8102ba8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:08:03,557 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:09:03,215 exceptions 25 [<carts.views.CartView object at 0x7f95b80f0ef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:09:03,221 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:10:04,045 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 20:10:04,135 exceptions 25 [<carts.views.CartView object at 0x7f95b8102c18>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:10:04,136 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:11:04,516 exceptions 25 [<carts.views.CartView object at 0x7f95b80b1278>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:11:04,522 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:12:04,092 exceptions 25 [<carts.views.CartView object at 0x7f7de01c3860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:12:04,093 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:13:00,692 exceptions 25 [<carts.views.CartView object at 0x7f2b88570898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:13:00,695 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:13:04,749 exceptions 25 [<carts.views.CartView object at 0x7f2b8853be48>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:13:04,758 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:13:22,678 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:13:22,882 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:13:25,582 exceptions 25 [<carts.views.CartView object at 0x7f2b8853ba20>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:13:25,583 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:13:29,740 exceptions 25 [<carts.views.CartView object at 0x7f2b882d3748>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:13:29,741 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:13:37,698 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:13:44,024 exceptions 25 [<carts.views.CartView object at 0x7f2b882e06d8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:13:44,062 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:16:09,152 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:16:15,081 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:16:18,465 exceptions 25 [<carts.views.CartView object at 0x7f2b882c1d30>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:16:18,467 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:27:14,761 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:27:14,962 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:27:16,242 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:27:16,287 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2018-11-05 20:27:24,963 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-05 20:27:25,330 basehttp 124 "GET /cart/ HTTP/1.1" 500 90805
+ERROR 2018-11-05 20:27:27,958 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-05 20:27:28,327 basehttp 124 "GET /cart/ HTTP/1.1" 500 90805
+ERROR 2018-11-05 20:27:33,193 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-05 20:27:33,389 basehttp 124 "GET /cart/ HTTP/1.1" 500 90805
+ERROR 2018-11-05 20:28:04,591 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-05 20:28:04,764 basehttp 124 "GET /cart/ HTTP/1.1" 500 90805
+ERROR 2018-11-05 20:29:04,979 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 485, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/home/python/.vritualenvs/django_py3/lib/python3.6/site-packages/rest_framework/views.py", line 400, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR 2018-11-05 20:29:05,327 basehttp 124 "GET /cart/ HTTP/1.1" 500 90805
+INFO 2018-11-05 20:29:54,476 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:29:57,409 exceptions 25 [<carts.views.CartView object at 0x7f1101b89e80>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:29:57,413 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:29:59,949 exceptions 25 [<carts.views.CartView object at 0x7f1101b26630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:29:59,963 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:30:08,220 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:30:12,044 exceptions 25 [<carts.views.CartView object at 0x7f1102951978>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:30:12,053 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:30:14,740 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:30:17,499 exceptions 25 [<carts.views.CartView object at 0x7f1101b40f28>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:30:17,504 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:31:04,581 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:31:13,244 exceptions 25 [<carts.views.CartView object at 0x7f78bc08b7b8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:31:13,247 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:31:20,206 exceptions 25 [<carts.views.CartView object at 0x7f78b77c54a8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:31:20,212 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:31:54,234 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:31:54,421 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+WARNING 2018-11-05 20:32:00,812 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 20:32:00,821 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 20:32:00,828 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+ERROR 2018-11-05 20:32:00,854 exceptions 25 [<carts.views.CartView object at 0x7f78b77f5438>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:32:00,855 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:32:04,397 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:32:07,368 exceptions 25 [<carts.views.CartView object at 0x7f78b77ebef0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:32:07,369 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:34:36,285 exceptions 25 [<carts.views.CartView object at 0x7f312f20e940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:34:36,286 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:34:38,584 exceptions 25 [<carts.views.CartView object at 0x7f312f175630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:34:38,586 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:35:04,435 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:37:31,212 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 20:37:31,326 exceptions 25 [<carts.views.CartView object at 0x7f696c44ffd0>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:37:31,330 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:38:04,367 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:38:04,515 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:39:04,269 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:39:22,864 exceptions 25 [<carts.views.CartView object at 0x7ff2eef90860>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:39:22,865 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:40:05,418 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2018-11-05 20:40:39,284 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 20:40:39,302 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 20:40:39,386 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-05 20:40:39,432 basehttp 124 "GET /cart/ HTTP/1.1" 200 742
+INFO 2018-11-05 20:40:44,815 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 20:41:52,460 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-05 20:41:59,661 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+WARNING 2018-11-05 20:41:59,677 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 20:41:59,690 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+ERROR 2018-11-05 20:41:59,693 exceptions 25 [<carts.views.CartView object at 0x7ff2f5638588>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:41:59,694 basehttp 124 "GET /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:42:02,070 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:42:04,340 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:42:06,054 exceptions 25 [<carts.views.CartView object at 0x7ff2ed4ba400>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:42:06,055 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:43:04,849 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:43:06,356 exceptions 25 [<carts.views.CartView object at 0x7fceee415f60>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:43:06,360 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:43:11,036 exceptions 25 [<carts.views.CartView object at 0x7fceee3be710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:43:11,037 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:43:57,742 exceptions 25 [<carts.views.CartView object at 0x7f9439ea8940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:43:57,751 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:44:00,600 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:44:02,051 exceptions 25 [<carts.views.CartView object at 0x7f9439e202e8>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:44:02,067 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:44:37,057 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:44:38,673 exceptions 25 [<carts.views.CartView object at 0x7f37d1b85f28>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:44:38,679 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:44:41,575 exceptions 25 [<carts.views.CartView object at 0x7f37d1b1f710>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:44:41,577 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:45:03,495 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:45:53,875 exceptions 25 [<carts.views.CartView object at 0x7f1ab8753940>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:45:53,877 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+ERROR 2018-11-05 20:45:57,165 exceptions 25 [<carts.views.CartView object at 0x7f1ab86ba630>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:45:57,166 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:49:10,324 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 20:49:10,420 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:49:11,907 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+ERROR 2018-11-05 20:49:11,931 exceptions 25 [<carts.views.CartView object at 0x7ff8340e0240>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:49:11,932 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 20:50:03,548 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:51:03,659 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:52:03,551 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 20:53:03,489 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+ERROR 2018-11-05 20:53:57,719 exceptions 25 [<carts.views.CartView object at 0x7f44882b6898>] WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-05 20:53:57,723 basehttp 124 "POST /cart/ HTTP/1.1" 507 35
+INFO 2018-11-05 21:00:00,787 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:00:01,178 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 21:00:03,449 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:00:03,454 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:00:05,714 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 21:00:12,519 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:01:03,310 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:02:03,236 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:03:03,923 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:04:03,808 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:05:03,098 basehttp 124 "OPTIONS /users/addresses/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:05:03,105 basehttp 124 "OPTIONS /orders/settlement/ HTTP/1.1" 200 0
+WARNING 2018-11-05 21:05:03,376 base 152 Not Found: /users/addresses/
+WARNING 2018-11-05 21:05:03,402 base 152 Not Found: /orders/settlement/
+WARNING 2018-11-05 21:05:03,437 basehttp 124 "GET /users/addresses/ HTTP/1.1" 404 8600
+WARNING 2018-11-05 21:05:03,447 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 404 8606
+WARNING 2018-11-05 21:05:04,918 base 152 Not Found: /users/addresses/
+WARNING 2018-11-05 21:05:04,928 basehttp 124 "GET /users/addresses/ HTTP/1.1" 404 8600
+WARNING 2018-11-05 21:05:05,034 base 152 Not Found: /orders/settlement/
+WARNING 2018-11-05 21:05:05,064 basehttp 124 "GET /orders/settlement/ HTTP/1.1" 404 8606
+INFO 2018-11-05 21:05:15,364 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+WARNING 2018-11-05 21:05:28,208 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 21:05:28,213 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 21:05:28,262 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-05 21:05:28,292 basehttp 124 "GET /cart/ HTTP/1.1" 200 992
+INFO 2018-11-05 21:08:28,166 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:08:33,459 basehttp 124 "GET /cart/ HTTP/1.1" 200 992
+INFO 2018-11-05 21:09:03,101 basehttp 124 "GET /cart/ HTTP/1.1" 200 992
+INFO 2018-11-05 21:09:17,681 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 21:09:32,407 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 21:09:32,885 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 21:09:33,811 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 21:09:34,230 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-05 21:09:35,395 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:09:36,687 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:09:38,415 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 21:10:04,085 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:10:04,385 basehttp 124 "GET /cart/ HTTP/1.1" 200 993
+INFO 2018-11-05 21:49:51,725 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+WARNING 2018-11-05 21:49:51,793 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+WARNING 2018-11-05 21:49:53,149 basehttp 124 "POST /authorizations/ HTTP/1.1" 400 67
+INFO 2018-11-05 21:49:57,344 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-05 21:50:01,322 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:50:01,613 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:50:03,930 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 21:50:08,169 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+WARNING 2018-11-05 21:50:16,146 base 152 Not Found: /categories/115/
+WARNING 2018-11-05 21:50:16,154 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8597
+INFO 2018-11-05 21:50:16,233 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:50:16,236 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-05 21:50:18,131 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 21:50:18,290 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 21:50:21,665 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 21:50:25,485 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:50:28,599 basehttp 124 "GET /cart/ HTTP/1.1" 200 250
+INFO 2018-11-05 21:50:30,434 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 21:50:31,976 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 21:50:36,230 basehttp 124 "GET /cart/ HTTP/1.1" 200 500
+INFO 2018-11-05 21:50:38,334 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 21:50:43,360 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 21:50:44,879 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+WARNING 2018-11-05 21:50:44,905 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:44,906 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:45,714 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:45,715 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:46,052 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:46,053 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:46,272 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:46,272 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:46,460 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:46,461 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:46,617 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:46,618 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:46,799 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:46,802 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 21:50:50,069 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 21:50:50,071 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+INFO 2018-11-05 21:50:51,804 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-05 21:51:03,662 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:52:03,398 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:53:03,103 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:54:02,994 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:55:03,807 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:56:03,601 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:57:03,384 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 21:58:04,016 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:06:03,860 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:06:03,918 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:08:03,390 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
