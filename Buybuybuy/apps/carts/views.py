@@ -211,4 +211,42 @@ class CartView(APIView):
             redis_cli.srem(key_select,sku_id)
         return response
 
+class CartSelectView(APIView):
+    def perform_authentication(self, request):
+        pass
+    def put(self,request):
+        try:
+            user =request.user
+        except:
+            user =None
+        serializer =serializers.CartSelectSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        selected =serializer.validated_data['selected']
+        response =Response({'message':'OK'})
+        if user is None:
+            #从Cookies中取数据
+            cart_str=request.COOKIES.get('cart')
+            cart_dict=myjson.loads(cart_str)
+            #改数据
+            for key in cart_dict:
+                cart_dict[key]['selected']=selected
+            cart_str =myjson.dumps(cart_str)
+            response.set_cookie('cart',cart_str,max_age=contants.CART_COOKIE_EXPIRES)
+        else:
+            redis_cli=get_redis_connection('cart')
+            key ='cart_%d' % request.user.id
+            key_select ='cart_selected_%d' %request.user.id
+            #获取所有商品的编号
+            sku_ids=redis_cli.hkeys(key)
+            if selected:
+                redis_cli.sadd(key_select,*sku_ids)
+            else:
+                redis_cli.srem(key_select,*sku_ids)
+        return response
+
+
+            #没有选中的就删除,什么意思
+    # 字典解包后是什么样子的
+    #序列化器不验证也可以吗
+
 

@@ -10448,3 +10448,93 @@ INFO 2018-11-05 21:58:04,016 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
 INFO 2018-11-05 22:06:03,860 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
 INFO 2018-11-05 22:06:03,918 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
 INFO 2018-11-05 22:08:03,390 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:09:03,166 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:10:03,924 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:13:04,354 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:15:02,950 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:16:04,487 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:20:03,635 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:33:04,289 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:33:04,355 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:34:03,666 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:35:03,465 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:36:03,158 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:37:05,069 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:40:03,096 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:41:03,830 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:42:03,734 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:43:03,914 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:44:03,517 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:44:03,629 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
+INFO 2018-11-05 22:44:59,509 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:44:59,812 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 22:45:01,879 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 22:45:04,366 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 22:45:05,119 basehttp 124 "GET /cart/ HTTP/1.1" 200 251
+INFO 2018-11-05 22:45:07,372 basehttp 124 "POST /browse_histories/ HTTP/1.1" 201 13
+INFO 2018-11-05 22:45:09,639 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 22:45:36,034 basehttp 124 "GET /cart/ HTTP/1.1" 200 500
+INFO 2018-11-05 22:45:39,128 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+WARNING 2018-11-05 22:45:39,161 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:39,164 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 22:45:39,868 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:39,870 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 22:45:40,297 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:40,298 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 22:45:40,482 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:40,483 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+INFO 2018-11-05 22:45:41,351 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-05 22:45:42,610 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+WARNING 2018-11-05 22:45:43,723 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:43,724 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 22:45:44,087 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:44,087 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+WARNING 2018-11-05 22:45:44,270 base 152 Not Found: /cart/selection/
+WARNING 2018-11-05 22:45:44,271 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 404 8597
+INFO 2018-11-05 22:46:04,120 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:46:34,027 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:34,994 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:35,650 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:36,176 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:36,320 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:36,692 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:36,843 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,023 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,201 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,404 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,579 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,763 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:37,948 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:46:38,482 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:47:04,025 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:48:04,096 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:49:04,059 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:49:17,672 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-05 22:49:18,961 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:49:19,671 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 22:50:04,112 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:51:03,918 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:52:03,881 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:53:03,783 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:54:04,112 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 22:54:04,226 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:55:03,878 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:56:03,682 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:57:03,460 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:58:03,128 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 22:59:04,010 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:00:03,726 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:01:03,561 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:02:03,526 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:03:03,204 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:03:55,357 basehttp 124 "OPTIONS /cart/selection/ HTTP/1.1" 200 0
+INFO 2018-11-05 23:03:55,383 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 23:04:03,742 basehttp 124 "GET /cart/ HTTP/1.1" 200 500
+INFO 2018-11-05 23:06:19,865 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2018-11-05 23:06:20,093 basehttp 124 "GET /cart/ HTTP/1.1" 200 500
+INFO 2018-11-05 23:06:22,776 basehttp 124 "PUT /cart/selection/ HTTP/1.1" 200 16
+INFO 2018-11-05 23:07:04,440 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:08:03,365 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:09:03,483 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+INFO 2018-11-05 23:10:03,301 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
+                                                                        

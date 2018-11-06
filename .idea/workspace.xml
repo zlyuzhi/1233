@@ -4,6 +4,7 @@
     <list default="true" id="998d93c3-c20c-44f9-8e8a-163aa7c92ec5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/logs/buys.log" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/logs/buys.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Buybuybuy/logs/crontab.log" beforeDir="false" afterPath="$PROJECT_DIR$/Buybuybuy/logs/crontab.log" afterDir="false" />
@@ -16,11 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Buybuybuy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541425780897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Buybuybuy$manage.coverage" NAME="manage Coverage Results" MODIFIED="1541430361010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Buybuybuy$demo.coverage" NAME="demo Coverage Results" MODIFIED="1541247251426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/fast_dfs" />
     <SUITE FILE_PATH="coverage/Buybuybuy$dev.coverage" NAME="dev Coverage Results" MODIFIED="1541159102899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Buybuybuy/settings" />
     <SUITE FILE_PATH="coverage/Buybuybuy$jwt_token.coverage" NAME="jwt_token Coverage Results" MODIFIED="1540880262192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/Buybuybuy$tests.coverage" NAME="tests Coverage Results" MODIFIED="1541420755380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Buybuybuy/apps/carts" />
+    <SUITE FILE_PATH="coverage/Buybuybuy$tests.coverage" NAME="tests Coverage Results" MODIFIED="1541427950671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Buybuybuy/apps/carts" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -71,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="203" column="29" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
+            <state relative-caret-position="109">
+              <caret line="188" column="47" selection-start-line="188" selection-start-column="47" selection-end-line="188" selection-end-column="47" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -83,23 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="162" column="18" lean-forward="true" selection-end-line="177" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            <state relative-caret-position="262">
+              <caret line="33" column="52" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="52" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
                 <element signature="e#124#474#0" />
@@ -183,11 +172,11 @@
         <option value="$PROJECT_DIR$/Buybuybuy/apps/cart/urls.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/urls.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/contants.py" />
-        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" />
         <option value="$PROJECT_DIR$/utils/myjson.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/settings/dev.py" />
-        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py" />
+        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py" />
+        <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py" />
         <option value="$PROJECT_DIR$/Buybuybuy/apps/carts/views.py" />
       </list>
     </option>
@@ -498,7 +487,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="662" height="635" extended-state="6" />
+    <frame x="67" y="25" width="1222" height="635" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3473054" />
@@ -506,9 +495,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32505175" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3029703" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29540917" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.08035004" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3029703" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29504952" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27881357" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.11466666" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3253493" />
@@ -859,16 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/contents/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -956,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="162" column="18" lean-forward="true" selection-end-line="177" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/goods/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -1008,24 +977,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state relative-caret-position="38">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="e#124#474#0" />
-            <element signature="e#531#727#0" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="203" column="29" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
+        <state relative-caret-position="109">
+          <caret line="188" column="47" selection-start-line="188" selection-start-column="47" selection-end-line="188" selection-end-column="47" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buybuybuy/apps/carts/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#124#474#0" />
+            <element signature="e#531#727#0" />
           </folding>
         </state>
       </provider>

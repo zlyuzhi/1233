@@ -33,3 +33,6 @@ class CartDeleteserializer(serializers.Serializer):
         if count <= 0:
             raise serializers.ValidationError('商品不存在')
         return value
+
+class CartSelectSerializer(serializers.Serializer):
+    selected = serializers.BooleanField()
