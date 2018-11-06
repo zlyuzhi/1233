@@ -2,12 +2,13 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 # Create your views here.
+from carts.utils import merge_cart_cookie_to_redis
 from oauth import constants
 from oauth.models import QQUser
 from oauth.qq_sdk import OAuthQQ
 from oauth.serializers import QQBindSerializer
 
-from utils import  tjws
+from utils import tjws
 from utils.jwt_token import generate
 
 
@@ -28,14 +29,13 @@ class QQLoginView(APIView):
     def get(self, request):
         # 获取code
         code = request.query_params.get('code')
-       
+
         # 根据code获取token
         oauthqq = OAuthQQ()
         token = oauthqq.get_access_token(code)
 
         # 根据token 获取openid
         openid = oauthqq.get_openid(token)
-
 
         # 查询openid 是否存在
         try:
@@ -51,25 +51,30 @@ class QQLoginView(APIView):
         else:
             # 如果存在就状态保存,登录成功
 
-            return Response({
+            response = Response({
                 'user_id': qquser.user.id,
-                'username':qquser.user.username,
-                'token':generate(qquser.user)
+                'username': qquser.user.username,
+                'token': generate(qquser.user)
             })
+            response = merge_cart_cookie_to_redis(request, qquser.user.id, response)
+            return response
 
-
-    def post(self,request):
-        #接收
-        serializer =QQBindSerializer(data=request.data)
+    def post(self, request):
+        # 接收
+        serializer = QQBindSerializer(data=request.data)
         if not serializer.is_valid():
             return Response({
-                'message':serializer.errors
+                'message': serializer.errors
             })
-        qquser =serializer.save()
+        qquser = serializer.save()
 
-        return Response({
-            'user_id':qquser.user.id,
-            'username':qquser.user.username,
-            'token':generate(qquser.user)
+        response = Response({
+            'user_id': qquser.user.id,
+            'username': qquser.user.username,
+            'token': generate(qquser.user)
 
         })
+        # 合并
+        response = merge_cart_cookie_to_redis(request, qquser.user.id, response)
+        # 响应
+        return response
