@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 
+from carts.utils import merge_cart_cookie_to_redis
 from goods.models import SKU
 from goods.serializers import SKUSerializer
 from users.serializers import UserCreateSerializer, UserDetailSerializer, EmailSerializer, EmailActiveSerializer, \
@@ -17,6 +18,8 @@ from users.serializers import UserCreateSerializer, UserDetailSerializer, EmailS
 from .models import *
 from rest_framework.generics import UpdateAPIView
 from rest_framework.decorators import action
+from rest_framework_jwt.views import ObtainJSONWebToken
+
 
 class UsernameCountView(APIView):
     def get(self, request, username):
@@ -113,17 +116,16 @@ class AddressViewSet(ModelViewSet):
             'addresses': serializer.data  # [{},{},...]
         })
 
-
     # destroy==》物理删除，重写，实现逻辑删除
     def destroy(self, request, *args, **kwargs):
-        #根据主键查询对象
-        address=self.get_object()
+        # 根据主键查询对象
+        address = self.get_object()
 
-        #逻辑删除
-        address.is_delete =True
-        #保存
+        # 逻辑删除
+        address.is_delete = True
+        # 保存
         address.save()
-        #响应
+        # 响应
         return Response(status=204)
 
         # 修改标题===>****/pk/title/------put
@@ -131,27 +133,29 @@ class AddressViewSet(ModelViewSet):
         # ^ ^addresses/(?P<pk>[^/.]+)/title/$ [name='addresses-title']
         # 设置收货地址的标题
         # 1不能够根据路由去写对应的视图,所以调用视图函数的action
-    @action(methods=['put'],detail=True)
-    def title(self,request,pk):
-        #更据主键查询收货地址
-        address=self.get_object()
-        #接受数据,修改标题属性
-        address.title=request.data.get('title')
-        #保存
-        address.save()
-        #响应
-        return Response({'title':address.title})
 
-    #设置默认收货地址===>^ ^addresses/(?P<pk>[^/.]+)/status/$ [name='addresses-status']
-    @action(methods=['put'],detail=True)
-    def status(self,request,pk):
-        #查找当前登录用户
-        user=request.user
-        #修改属性
-        user.default_address_id=pk
+    @action(methods=['put'], detail=True)
+    def title(self, request, pk):
+        # 更据主键查询收货地址
+        address = self.get_object()
+        # 接受数据,修改标题属性
+        address.title = request.data.get('title')
+        # 保存
+        address.save()
+        # 响应
+        return Response({'title': address.title})
+
+    # 设置默认收货地址===>^ ^addresses/(?P<pk>[^/.]+)/status/$ [name='addresses-status']
+    @action(methods=['put'], detail=True)
+    def status(self, request, pk):
+        # 查找当前登录用户
+        user = request.user
+        # 修改属性
+        user.default_address_id = pk
         user.save()
-        #响应
-        return Response({'message':'OK'})
+        # 响应
+        return Response({'message': 'OK'})
+
 
 class BrowseHistoryView(generics.ListCreateAPIView):
     permission_classes = [IsAuthenticated]
@@ -178,3 +182,15 @@ class BrowseHistoryView(generics.ListCreateAPIView):
             skus.append(SKU.objects.get(pk=int(sku_id)))
         return skus  # [sku,sku,sku,...]
 
+
+class LoginView(ObtainJSONWebToken):
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        # 登录逻辑还是使用jwt中的视图实现，此处在登录后添加自己的逻辑
+        # 判断是否登录成功
+        if response.status_code==200:
+            #获取用户编号
+            user_id =response.data.get('user_id')
+            #当前添加逻辑:合并购物车
+            resp=merge_cart_cookie_to_redis(request,user_id,response)
+        return response

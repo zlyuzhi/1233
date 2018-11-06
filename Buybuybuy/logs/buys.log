@@ -10537,4 +10537,40 @@ INFO 2018-11-05 23:07:04,440 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
 INFO 2018-11-05 23:08:03,365 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
 INFO 2018-11-05 23:09:03,483 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
 INFO 2018-11-05 23:10:03,301 basehttp 124 "GET /cart/ HTTP/1.1" 200 502
-                                                                        
+                                                                        INFO 2018-11-06 15:10:41,360 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2018-11-06 15:10:41,462 base 152 Not Found: /categories/115/
+WARNING 2018-11-06 15:10:41,467 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8762
+INFO 2018-11-06 15:10:41,717 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-06 15:10:41,753 basehttp 124 "GET /cart/ HTTP/1.1" 200 993
+INFO 2018-11-06 15:10:44,593 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-06 15:10:59,354 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-11-06 15:11:10,538 basehttp 124 "GET /cart/ HTTP/1.1" 200 1227
+INFO 2018-11-06 15:11:13,685 basehttp 124 "GET /cart/ HTTP/1.1" 200 1227
+INFO 2018-11-06 15:11:14,820 basehttp 124 "GET /cart/ HTTP/1.1" 200 1227
+INFO 2018-11-06 15:11:19,667 basehttp 124 "PUT /cart/ HTTP/1.1" 200 40
+INFO 2018-11-06 15:11:21,377 basehttp 124 "PUT /cart/ HTTP/1.1" 200 39
+INFO 2018-11-06 15:11:23,390 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-06 15:11:24,608 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-06 15:11:26,679 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-06 15:11:30,766 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-06 15:11:42,178 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+ERROR 2018-11-06 15:11:42,296 exceptions 25 [<users.views.LoginView object at 0x7f5f188f4f60>] Command # 2 (SADD cart_1 8) of pipeline caused error: WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-06 15:11:42,297 basehttp 124 "POST /authorizations/ HTTP/1.1" 507 35
+ERROR 2018-11-06 15:11:50,947 exceptions 25 [<users.views.LoginView object at 0x7f5f188f3208>] Command # 2 (SADD cart_1 8) of pipeline caused error: WRONGTYPE Operation against a key holding the wrong kind of value
+ERROR 2018-11-06 15:11:50,949 basehttp 124 "POST /authorizations/ HTTP/1.1" 507 35
+WARNING 2018-11-06 15:17:11,025 base 152 Not Found: /categories/115/
+INFO 2018-11-06 15:17:11,028 basehttp 124 "GET /cart/ HTTP/1.1" 200 235
+WARNING 2018-11-06 15:17:11,046 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8762
+INFO 2018-11-06 15:17:11,074 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1322
+INFO 2018-11-06 15:17:13,166 basehttp 124 "GET /categories/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1359
+INFO 2018-11-06 15:17:16,614 basehttp 124 "POST /cart/ HTTP/1.1" 200 38
+INFO 2018-11-06 15:17:25,825 basehttp 124 "GET /cart/ HTTP/1.1" 200 235
+INFO 2018-11-06 15:17:28,321 basehttp 124 "PUT /cart/ HTTP/1.1" 200 38
+INFO 2018-11-06 15:17:39,316 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 227
+INFO 2018-11-06 15:17:42,738 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2018-11-06 15:17:42,912 basehttp 124 "GET /user/ HTTP/1.1" 200 98
+INFO 2018-11-06 15:17:42,940 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+INFO 2018-11-06 15:17:42,975 basehttp 124 "GET /browse_histories/ HTTP/1.1" 200 2
+INFO 2018-11-06 15:17:44,986 basehttp 124 "GET /cart/ HTTP/1.1" 200 235
+INFO 2018-11-06 15:17:58,863 basehttp 124 "DELETE /cart/ HTTP/1.1" 204 0
+INFO 2018-11-06 15:18:04,525 basehttp 124 "GET /cart/ HTTP/1.1" 200 2
