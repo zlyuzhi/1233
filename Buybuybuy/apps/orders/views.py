@@ -16,6 +16,7 @@ class CartListView(APIView):
         #1读取数据库中的数据
         redis_cli = get_redis_connection('cart')
         key_cart='cart_%d' %request.user.id
+
         key_selected='cart_selected_%d' %request.user.id
         cart_dict =redis_cli.hgetall(key_cart) # {sku_id:count,...}
         cart_selected =redis_cli.smembers(key_selected)# [sku_id,...]
@@ -23,6 +24,7 @@ class CartListView(APIView):
         for sku_id,count in cart_dict.items():
             cart_dict2[int(sku_id)]=int(count)
         cart_selected2=[int(sku_id) for sku_id in cart_selected]
+
         # 2 查询商品对象
         skus =SKU.objects.filter(pk__in=cart_selected2)
         for sku in skus:
