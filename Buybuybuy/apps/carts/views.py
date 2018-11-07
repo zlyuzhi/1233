@@ -102,8 +102,6 @@ class CartView(APIView):
     def get(self, request):
         user = self.user(request)
 
-
-
         if user is None:
             # 未登录,读取cookie
             # cart_dict = self.read_cookie(request)
