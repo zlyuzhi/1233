@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'goods.apps.GoodsConfig',
     'contents.apps.ContentsConfig',
     'carts.apps.CartsConfig',
+    'orders.apps.OrdersConfig',
+    'payments.apps.PaymentsConfig',
     
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
@@ -350,3 +352,17 @@ HAYSTACK_CONNECTIONS = {
 
 # 当添加、修改、删除数据时，自动生成索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+
+#支付宝
+ALIPAY_APPID='2016092000553693',
+ALIPAY_URL='https://openapi.alipaydev.com/gateway.do'
+
+ALIPAY_PRIVATE_KEY_PATH = os.path.join(BASE_DIR, 'apps/payments/alipay/app_private_key.pem')
+ALIPAY_PUBLIC_KEY_PATH = os.path.join(BASE_DIR, 'apps/payments/alipay/alipay_public_key.pem')
+
+
+ALIPAY_SUBJECT='zl商城'
+ALIPAY_RETURN_URL='http://www.meiduo.site:8080/pay_success.html'
+ALIPAY_GATE = 'https://openapi.alipaydev.com/gateway.do?'
+ALIPAY_DEBUG=True
